@@ -1,0 +1,649 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>eat</title>
+<link rel="stylesheet" type="text/css" href="css/eat.css" />
+<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+<link rel="stylesheet" type="text/css" href="css/common.css"/>
+<link rel="stylesheet" type="text/css" href="css/lanrenzhijia.css"/>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/eat.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<!--[if lt IE 9]>
+<script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+
+<!--头部header-->
+<header>
+    <!-- 头部的小导航的css样式和js请看common.css和common.js -->
+    
+    <!--头部的小导航header_top-->
+    <div id="header_top">
+        <div class="site_nav">
+            <ul class="nav_left">
+                <li><a href="index.html" target="_blank">森林首页</a></li>
+                <li class="login"><a href="#">请登录</a></li>
+                <li class="user"><div id='userlogin'></div></li>
+                <li class="reg"><a href="register.html">免费注册</a>
+                </li>
+                <li><a id='login_out' style="display:none;">退出</a></li>
+            </ul>
+            <ul class="nav_right">
+                <li id="mys">
+                    <a href="#">
+                        <i class="iconfont icon-yonghu"></i>   我的淘宝
+                    </a>
+                    <div id="mys_list">
+                        <ul>
+                            <li><a href="#"><span class="mys_list_left"></span>我的订单</a></li>
+                            <li><a href="#"><span class="mys_list_left"></span>我的现金券</a></li>
+                            <li><a href="#"><span class="mys_list_left"></span>我的红包</a></li>
+                            <li><a href="#"><span class="mys_list_left"></span>我的余额</a></li>
+                            <li><a href="#"><span class="mys_list_left"></span>我的提现退款</a></li>
+                            <li><a href="#"><span class="mys_list_left"></span>我的收藏</a></li>
+                            <li><a href="#"><span class="mys_list_left"></span>我的心愿单</a></li>
+                            <li><a href="#"><span class="mys_list_left"></span>会员中心</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-gouwuchecar"></i>   购物车<span>0</span>件
+                    </a>
+                </li>
+                <li id="favortite">
+                    <a href="#">
+                        <i class="iconfont icon-shoucangjia"></i>   收藏夹
+                    </a>
+                    <div id="favortite_list">
+                        <ul>
+                            <li><a href="#">收藏的宝贝</a></li>
+                            <li><a href="#">收藏的店铺</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="merchant"><a href="#">商家支持</a>
+                    <div id="merchant_list">
+                        <ul>
+                            <li><a href="#">商家中心</a></li>
+                            <li><a href="#">商家入驻</a></li>
+                            <li><a href="#">运营服务</a></li>
+                            <li><a href="#">商家品控</a></li>
+                            <li><a href="#">商家工具</a></li>
+                            <li><a href="#">商家规则</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div> 
+    </div>
+
+    <!-- 头部的logo与搜索框部分 -->
+    <div class="header_content">
+        <div class="content">
+            <span class="logo">森林鲜生</span>
+            <div class="search">    
+                <input type="text" class="search_text" placeholder="苹果"/>
+                <input type="button" value="搜索" class="search_button"/>
+                
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<!--中间的main-->
+<div id="main">
+
+	<!--中间的图片轮播部分-->
+    <div class="exhibition">
+    	<div id="box">
+            <ul id="box_img">
+                <li><a href="#"><img src="images/eat/eat_bg.jpg"></a></li>
+                <li><a href="#"><img src="images/eat/eat_bg1.jpg"></a></li>
+                <li><a href="#"><img src="images/eat/eat_bg2.jpg"></a></li>
+                <!-- <li><a href="#"><img src="images/eat/eat_bg3.jpg"></a></li>
+                <li><a href="#"><img src="images/eat/eat_bg4.jpg"></a></li> -->
+            </ul>
+            <ul id="box_font">
+                <li></li>
+                <li></li>
+                <li></li>
+                <!-- <li></li>
+                <li></li> -->
+            </ul>
+        </div>
+        <div class="gradientWhite specity"></div>
+    </div>
+    
+    <!-- 正文内容 -->
+    <div id="main_content">
+        <!--中间的当季水果部分-->
+        <div class="eat">
+            <h4>
+                <span class="eat_show">当季水果</span>
+                <ol class="eat_ol">
+                    <li><a href="#">柠檬</a></li>
+                    <li><a href="#">芒果</a></li>
+                    <li><a href="#">奇异果</a></li>
+                    <li><a href="#">橙子</a></li>
+                    <li><a href="#">牛油果</a></li>
+                    <li><a href="#">榴莲</a></li>
+                    <li><a href="#">香蕉</a></li>
+                    <li><a href="#">红心火龙果</a></li>
+                </ol>
+            </h4>
+            <div class="eat_content">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="images/eat/fruit1.jpg" />
+                            <div class="eat_shadow gradient">
+                                <h3>墨西哥牛油果6粒</h3>
+                                <div class="eat_shadowHide">
+                                    <p class="p_underline">小mini更新鲜</p>
+                                    <p>1942人已购买</p>
+                                    <p class="eat_price"><span>￥</span>29.0<i class="iconfont icon-gouwuchecar"></i></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/eat/fruit2.jpg" />
+                            <div class="eat_shadow gradient">
+                                <h3>佳沛绿奇异果</h3>
+                                <div class="eat_shadowHide">
+                                    <p class="p_underline">27-33粒</p>
+                                    <p>327人已购买</p>
+                                    <p class="eat_price"><span>￥</span>129.0<i class="iconfont icon-gouwuchecar"></i></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/eat/fruit3.jpg" />
+                            <div class="eat_shadow gradient">
+                                <h3>红玫瑰苹果</h3>
+                                <div class="eat_shadowHide">
+                                    <p class="p_underline">8粒 单果160-190g</p>
+                                    <p>541人已购买</p>
+                                    <p class="eat_price"><span>￥</span>49.0<i class="iconfont icon-gouwuchecar"></i></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/eat/fruit4.jpg" />
+                            <div class="eat_shadow gradient">
+                                <h3>泰国金枕榴莲</h3>
+                                <div class="eat_shadowHide">
+                                    <p class="p_underline">7-8斤</p>
+                                    <p>388人已购买</p>
+                                    <p class="eat_price"><span>￥</span>125.0<i class="iconfont icon-gouwuchecar"></i></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/eat/fruit5.jpg" />
+                            <div class="eat_shadow gradient">
+                                <h3>澳大利亚橙8粒</h3>
+                                <div class="eat_shadowHide">
+                                    <p class="p_underline">橙香浓郁</p>
+                                    <p>1057人已购买</p>
+                                    <p class="eat_price"><span>￥</span>69.0<i class="iconfont icon-gouwuchecar"></i></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/eat/fruit6.jpg" />
+                            <div class="eat_shadow gradient">
+                                <h3>南非葡萄柚8粒</h3>
+                                <div class="eat_shadowHide">
+                                    <p class="p_underline">酸爽回甜</p>
+                                    <p>2200人已购买</p>
+                                    <p class="eat_price"><span>￥</span>48.0<i class="iconfont icon-gouwuchecar"></i></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/eat/fruit7.jpg" />
+                            <div class="eat_shadow gradient">
+                                <h3>皇后红玫瑰苹果</h3>
+                                <div class="eat_shadowHide">
+                                    <p class="p_underline">单果240-270g</p>
+                                    <p>322人已购买</p>
+                                    <p class="eat_price"><span>￥</span>46.0<i class="iconfont icon-gouwuchecar"></i></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/eat/fruit9.jpg" />
+                            <div class="eat_shadow gradient">
+                                <h3>葡萄柚</h3>
+                                <div class="eat_shadowHide">
+                                    <p class="p_underline">4粒 单果260-330g</p>
+                                    <p>1942人已购买</p>
+                                    <p class="eat_price"><span>￥</span>29.0<i class="iconfont icon-gouwuchecar"></i></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+
+        <!--中间的新鲜水产部分-->
+        <div class="eat marine">
+            <h4>
+                <span class="eat_show marine_show">新鲜水产</span>
+                <ol class="eat_ol marine_ol">
+                    <li><a href="#">海参</a></li>
+                    <li><a href="#">三文鱼</a></li>
+                    <li><a href="#">虾</a></li>
+                    <li><a href="#">蟹</a></li>
+                    <li><a href="#">黑鳕鱼</a></li>
+                    <li><a href="#">鲽鱼</a></li>
+                    <li><a href="#">北极贝</a></li>
+                    <li><a href="#">扇贝</a></li>
+                    <li><a href="#">银鳕鱼</a></li>
+                    <li><a href="#">龙利鱼</a></li>
+                    <li><a href="#">鲽鱼</a></li>
+                </ol>
+            </h4>
+            <div class="eat_content">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="images/eat/marine1.jpg" />
+                            <div class="eat_shadow gradient">
+                                <h3>阿拉斯加狭鳕鱼片</h3>
+                                <div class="eat_shadowHide">
+                                    <p class="p_underline">1000g</p>
+                                    <p>563人已购买</p>
+                                    <p class="eat_price"><span>￥</span>56.0<i class="iconfont icon-gouwuchecar"></i></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/eat/marine2.jpg" />
+                            <div class="eat_shadow gradient">
+                                <h3>北极甜虾400g</h3>
+                                <div class="eat_shadowHide">
+                                    <p class="p_underline">鲜甜带籽</p>
+                                    <p>2292人已购买</p>
+                                    <p class="eat_price"><span>￥</span>28.0<i class="iconfont icon-gouwuchecar"></i></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/eat/marine3.jpg" />
+                            <div class="eat_shadow gradient">
+                                <h3>深海真鳕鱼排600g</h3>
+                                <div class="eat_shadowHide">
+                                    <p class="p_underline">珍稀品种</p>
+                                    <p>294人已购买</p>
+                                    <p class="eat_price"><span>￥</span>45.0<i class="iconfont icon-gouwuchecar"></i></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/eat/marine4.jpg" />
+                            <div class="eat_shadow gradient">
+                                <h3>黑虎虾仁600g</h3>
+                                <div class="eat_shadowHide">
+                                    <p class="p_underline">美味香甜</p>
+                                    <p>259人已购买</p>
+                                    <p class="eat_price"><span>￥</span>109.0<i class="iconfont icon-gouwuchecar"></i></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/eat/marine5.jpg" />
+                            <div class="eat_shadow gradient">
+                                <h3>厄瓜多尔白虾1kg</h3>
+                                <div class="eat_shadowHide">
+                                    <p class="p_underline">壳薄体肥</p>
+                                    <p>448人已购买</p>
+                                    <p class="eat_price"><span>￥</span>87.0<i class="iconfont icon-gouwuchecar"></i></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/eat/marine6.jpg" />
+                            <div class="eat_shadow gradient">
+                                <h3>阿拉斯加雪蟹钳</h3>
+                                <div class="eat_shadowHide">
+                                    <p class="p_underline">多汁细腻</p>
+                                    <p>16人已购买</p>
+                                    <p class="eat_price"><span>￥</span>185.0<i class="iconfont icon-gouwuchecar"></i></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/eat/marine7.jpg" />
+                            <div class="eat_shadow gradient">
+                                <h3>三文鱼排500g</h3>
+                                <div class="eat_shadowHide">
+                                    <p class="p_underline">吃货推荐</p>
+                                    <p>193人已购买</p>
+                                    <p class="eat_price"><span>￥</span>89.0<i class="iconfont icon-gouwuchecar"></i></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/eat/marine8.jpg" />
+                            <div class="eat_shadow gradient">
+                                <h3>北极贝250g</h3>
+                                <div class="eat_shadowHide">
+                                    <p class="p_underline">刺身佳品</p>
+                                    <p>25人已购买</p>
+                                    <p class="eat_price"><span>￥</span>85.0<i class="iconfont icon-gouwuchecar"></i></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <!--中间的放心鲜肉部分-->
+        <div class="eat meat">
+            <h4>
+                <span class="eat_show meat_show">放心鲜肉</span>
+                <ol class="eat_ol meat_ol">
+                    <li><a href="#">羊肉</a></li>
+                    <li><a href="#">羊排</a></li>
+                    <li><a href="#">羊腿</a></li>
+                    <li><a href="#">老母鸡</a></li>
+                    <li><a href="#">西冷牛排</a></li>
+                    <li><a href="#">菲力牛排</a></li>
+                    <li><a href="#">牛肋条</a></li>
+                    <li><a href="#">牛腱</a></li>
+                    <li><a href="#">牛腩</a></li>
+                </ol>
+            </h4>
+            <div class="eat_content">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="images/eat/meat1.jpg" />
+                            <div class="eat_shadow gradient">
+                                <h3>安格斯牛腩块1kg</h3>
+                                <div class="eat_shadowHide">
+                                    <p class="p_underline">适合炖煮</p>
+                                    <p>3361人已购买</p>
+                                    <p class="eat_price"><span>￥</span>59.0<i class="iconfont icon-gouwuchecar"></i></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/eat/meat2.jpg" />
+                            <div class="eat_shadow gradient">
+                                <h3>切块牛仔骨1kg</h3>
+                                <div class="eat_shadowHide">
+                                    <p class="p_underline">口感嫩滑 嚼劲十足</p>
+                                    <p>157人已购买</p>
+                                    <p class="eat_price"><span>￥</span>79.0<i class="iconfont icon-gouwuchecar"></i></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/eat/meat3.jpg" />
+                            <div class="eat_shadow gradient">
+                                <h3>澳洲牛腱子肉1kg</h3>
+                                <div class="eat_shadowHide">
+                                    <p class="p_underline">肉中娇子</p>
+                                    <p>9367人已购买</p>
+                                    <p class="eat_price"><span>￥</span>65.0<i class="iconfont icon-gouwuchecar"></i></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/eat/meat4.jpg" />
+                            <div class="eat_shadow gradient">
+                                <h3>牛排套餐1300g</h3>
+                                <div class="eat_shadowHide">
+                                    <p class="p_underline">调理牛排</p>
+                                    <p>1170人已购买</p>
+                                    <p class="eat_price"><span>￥</span>95.0<i class="iconfont icon-gouwuchecar"></i></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/eat/meat5.jpg" />
+                            <div class="eat_shadow gradient">
+                                <h3>泰森冷冻琵琶腿500g</h3>
+                                <div class="eat_shadowHide">
+                                    <p class="p_underline">科学喂养 营养美味</p>
+                                    <p>245人已购买</p>
+                                    <p class="eat_price"><span>￥</span>17.8<i class="iconfont icon-gouwuchecar"></i></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/eat/meat6.jpg" />
+                            <div class="eat_shadow gradient">
+                                <h3>进口牛霖肉1kg</h3>
+                                <div class="eat_shadowHide">
+                                    <p class="p_underline">冷冻谷饲牛肉</p>
+                                    <p>167人已购买</p>
+                                    <p class="eat_price"><span>￥</span>89.0<i class="iconfont icon-gouwuchecar"></i></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/eat/meat7.jpg" />
+                            <div class="eat_shadow gradient">
+                                <h3>带骨牛肋排块</h3>
+                                <div class="eat_shadowHide">
+                                    <p class="p_underline">1000g牛肉</p>
+                                    <p>1020人已购买</p>
+                                    <p class="eat_price"><span>￥</span>43.0<i class="iconfont icon-gouwuchecar"></i></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/eat/meat8.jpg" />
+                            <div class="eat_shadow gradient">
+                                <h3>澳洲菲力牛排</h3>
+                                <div class="eat_shadowHide">
+                                    <p class="p_underline">赠送酱包黄油</p>
+                                    <p>461人已购买</p>
+                                    <p class="eat_price"><span>￥</span>99.0<i class="iconfont icon-gouwuchecar"></i></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+    
+</div>
+
+
+<!--底部的footer-->
+<footer>
+    <div id="footer_top">
+        <div class="footer_top_copyright">
+            <dl>
+                <dt>购物指南</dt>
+                <dd>免费注册</dd>
+                <dd>开通支付宝</dd>
+                <dd>支付宝充值</dd>
+            </dl>   
+            <dl >
+                <dt>森林保障</dt>
+                <dd>发票保障</dd>
+                <dd>售后规则</dd>
+                <dd>缺货赔付</dd>
+            </dl>
+            <dl >
+                <dt>支付方式</dt>
+                <dd>快捷支付</dd>
+                <dd>信用卡</dd>
+                <dd>余额宝</dd>
+                <dd>蚂蚁花呗</dd>
+                <dd>货到付款</dd>
+            </dl>
+            <dl >
+                <dt>商家服务</dt>
+                <dd>商家入驻</dd>
+                <dd>商家中心</dd>
+                <dd>物流服务</dd>
+                <dd>喵言喵语</dd>
+                <dd>运营服务</dd>
+                
+            </dl>
+            <img src="images/common/bottom.png" />
+        </div>
+    </div>
+    <div class="footer_buttom">
+        <div class="footer_buttom_main">
+            <ul>
+                <li><a href="#">阿里巴巴集团</a></li>
+                <li><a href="#">淘宝网</a></li>
+                <li><a href="#">天猫</a></li>
+                <li><a href="#">聚划算</a></li>
+                <li><a href="#">全球速卖通</a></li>
+                <li><a href="#">阿里巴巴国际交易市场</a></li>
+                <li><a href="#">1688</a></li>
+                <li><a href="#">阿里妈妈</a></li>
+                <li><a href="#">阿里旅行·去啊</a></li>
+                <li><a href="#">阿里云计算</a></li>
+                <li><a href="#">YunOS</a></li>
+                <li><a href="#">阿里通信</a></li>
+                <li><a href="#">万网</a></li>
+                <li><a href="#">高德</a></li>
+                <li><a href="#">优视</a></li>
+                <li><a href="#">友盟</a></li>
+            </ul> 
+            <p>增值电信业务经营许可证： 浙B2-20110446网络文化经营许可证：浙网文[2015]0295-065号互联网医疗保健信息服务 审核同意书 浙卫网审【2014】6号</p>      
+            <p>互联网药品信息服务资质证书编号：浙-（经营性）-2012-0005</p> 
+            <small>© 2003-2016 SENLINSHOP.COM 版权所有</small> 
+        </div>
+    </div> 
+</footer>
+
+
+<!-- 右侧边栏的css样式和js请看common.css和common.js -->
+
+<!--右侧边栏-->
+<div class="tools_right">
+	<ul>
+    	<li>
+            <a href="#"><i class="iconfont icon-yonghu"></i></a>
+            <div class="tools_fly">我的特权</div>
+        </li>
+        <li>
+            <a href="#"><i class="iconfont icon-gouwuchecar"></i>    购物车</a>
+        </li>
+        <li>
+            <a href="#"><i class="iconfont icon-money1"></i></a>
+            <div class="tools_fly">我的资产</div>
+        </li>
+        <li>
+            <a href="#"><i class="iconfont icon-zan"></i></a>
+            <div class="tools_fly">我喜爱的</div>
+        </li>
+        <li>
+            <a href="#"><i class="iconfont icon-shoucangjia"></i></a>
+            <div class="tools_fly">我的收藏</div>
+        </li>
+        <li>
+            <a href="#"><i class="iconfont icon-shangpin"></i></a>
+            <div class="tools_fly">我的店铺</div>
+        </li>
+        <li>
+            <a href="#"><i class="iconfont icon-call"></i></a>
+            <div class="tools_fly">我的客服</div>
+        </li>
+    </ul>
+
+</div>
+
+<!-- 登录界面的css样式和js请看lanrenzhijia.css和common.js -->
+
+<!-- 登录界面 -->
+<div class="theme-popover">
+     <div class="theme-poptit">
+          <a href="#" title="关闭" class="close">×</a>
+          <h3>森林shop网站登录</h3>
+     </div>
+     <div class="theme-popbod dform">
+           <form class="theme-signin">
+                <ol>
+                     <li><h4>请输入您的用户名和密码！</h4></li>
+                     <li><strong>用户名：</strong><input class="ipt" id="username" type="text" name="username" placeholder="请输入账户" size="20" /></li>
+                     <li><strong>密码：</strong><input class="ipt" id="password" type="password" name="password" placeholder="请输入密码" size="20" /></li>
+                     <li><input class="btn btn-primary" type="button" id="loginBtn" value=" 登 录 " /></li>
+                </ol>
+           </form>
+     </div>
+</div>
+<div class="theme-popover-mask"></div>
+
+<!-- 固定搜索框 -->
+<div id="search_frame">
+    <div class="search_content">
+        <span class="logo">森林鲜生</span>
+        <div class="search">    
+            <input type="text" class="search_text" placeholder="苹果"/>
+            <input type="button" value="搜索" class="search_button"/>
+            
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

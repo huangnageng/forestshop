@@ -1,0 +1,592 @@
+@charset "utf-8";
+/* CSS Document */
+/*总的样式*/
+*{margin:0;
+	padding:0;
+	list-style:none;
+	text-decoration:none;}
+
+	
+/*头部header的样式*/
+header{height:120px;}
+	
+/*头部的logo与搜索框部分*/
+.header_content{height:100px;}
+.content{width:1200px;
+	height:100px;
+	margin:0 auto;
+	position:relative;}
+.logo{width:150px;
+	height:50px;
+	position:absolute;
+	top:20px;
+	left:50px;
+	color:#000;
+	font-size:24px;
+}
+.search{width:500px;
+	height:80px;
+	position:absolute;
+	top:20px;
+	left:600px;}
+.search_text{width:350px;
+	height:30px;
+	float:left;
+	border:3px solid #000;
+	background:#fff;
+	text-indent:5px;}
+.search_button{width:120px;
+	height:36px;
+	background:#000;
+	color:#fff;
+	border:none;
+	float:left;
+	font-size:18px;
+	font-weight:bold;
+	cursor:pointer;}
+.search ul{clear:both;
+	width:500px;
+	height:30px;}
+.search ul li{float:left;}
+.search ul li a{padding:0 5px;
+	color:#666;
+	font-size:12px;
+	border-right:1px #999 solid;}
+.search ul li:last-child a{border:none;}
+.search ul li a:hover{color:#C99;}
+
+
+	
+/*中间的main*/	
+#main{
+	background:#f5f5f5;
+}
+#main nav{
+	height:40px;
+	background:#000;
+}
+#main nav ul{
+	width:1200px;
+	height:40px;
+	display:block;
+	margin:0 auto;
+	background:#000;
+}
+#main nav li{
+	height:40px;
+	float:left;
+	margin-right:40px;
+	line-height:40px;
+}
+#main nav li:first-child{
+	width:200px;
+	text-align:center;
+	background:#000;
+	color:#fff;
+	font-size:14px;
+	font-weight:bold;
+	position:relative;
+}
+#main nav li:last-child{
+	margin-left:300px;
+}
+#main nav li:last-child a:hover{
+	text-decoration:underline;
+}
+#main nav li a{
+	font-size:14px;
+	color:#fff;
+}
+
+/*全部商品分类部分*/
+.all_sort{
+	width:200px;
+	height:400px;
+	position:absolute;
+	top:40px;
+	left:0;
+	background:#333;
+	color:#fff;
+	z-index:2;
+	font-weight:normal;
+}
+.all_sortCont{
+	width:160px;
+	height:58px;
+	margin:0 auto;
+	line-height:30px;
+	border-bottom:1px #666 solid;
+	padding:20px;
+	text-align:left;
+}
+.all_sortCont:hover{
+	background:#000;
+}
+.all_sortCont a{
+	font-size:16px !important;
+}
+.all_sortCont p{
+	font-size:12px;
+}
+.all_none{
+	border-bottom:none;
+}
+
+
+/*轮播部分*/
+#carousel{
+	height:400px;
+	background:#F4E8E8;
+}
+.carouselBox{
+	width:1200px;
+	margin:0 auto;
+	position:relative;
+}
+#box{
+	width:100%;
+	height:400px;
+	position: relative;
+}
+#box_img{
+	width:1180px;
+	height:400px;
+	margin:0 auto;
+	position: relative;
+}
+#box_img li{
+	width:1180px;
+	height:400px;
+	position:absolute;
+	top:0;
+	left:0;
+	opacity:0;
+	filter:alpha(opacity=0);
+}
+#box_img li:first-child{
+	opacity:1;
+	filter:alpha(opacity=1);
+}
+#box_font{
+	width:200px;
+	height:50px;
+	position: absolute;
+	right:200px;
+	bottom:0px;
+
+}
+#box_font li{
+	float:left;
+	width:20px;
+	height:20px;
+	font-size:12px;
+	border-radius:20px;
+	background:#000;
+	text-align:center;
+	line-height:20px;
+	margin-left:10px;
+	opacity:0.3;
+	filter:alpha(opacity=30);
+	cursor:pointer;
+}
+#box_font li:first-child{
+	opacity:0.7;
+	filter:alpha(opacity=70);
+}
+
+/*轮播的右边部分*/
+.carouselRight{
+	width:250px;
+	height:380px;
+	background:#fff;
+	position:absolute;
+	right:0;
+	top:0;
+	text-align:center;
+	padding-top:20px;
+}
+.carouselRight .title{
+	height:90px;
+}
+.carouselRight .title p{
+	font-size:20px;
+	font-weight:bold;
+	color:#7A45E5;
+	line-height:30px;
+}
+.carouselRight a img{
+	width:200px;
+	height:200px;
+}
+.carouselRight h4{
+	margin:10px 0;
+}
+.carouselRight p{
+	width:210px;
+	margin:0 auto;
+	color:#999;
+}
+
+
+/*正文部分*/
+.main_content{
+	width:1200px;
+	/*background:#abc;*/
+	margin:0 auto;
+	margin-top:20px;
+}
+
+
+/*全球旗舰店部分*/
+.storefront{
+	width:1200px;
+	height:420px;
+	margin-top:30px;
+	margin-bottom:30px;
+}
+.storefront_content{
+	width:1200px;
+	height:340px;
+	overflow: hidden;
+}
+.storefront_all{
+	width:726px;
+	height:340px;
+	position: relative;
+}
+.storefront_allLeft{
+	width:237px;
+	height:340px;
+	position: relative;
+}
+.storefront_hide,.storefront_show{
+	height:40px;
+	position: absolute;
+	bottom:0;
+	left:0;
+}
+.storefront_hide{
+	width:237px;
+	background:#000;
+	opacity:0.5;
+	filter:alpha(opacity=50);
+}
+.storefront_show{
+	width:217px;
+	z-index:2;
+	color:#fff;
+	line-height:40px;
+	padding-left:20px;
+	font-size:14px;
+	opacity:1;
+	filter:alpha(opacity=100);
+
+}
+.storeHome_hide,.storeHome_show{
+	width:140px;
+	height:50px;
+	border:5px #000 solid;
+	position: absolute;
+	top:145px;
+	left:44px;
+	opacity:0;
+	filter:alpha(opacity=0);
+}
+.storeHome_hide{
+	background:#000;
+}
+.storeHome_show{
+	font-size:16px;
+	color:#fff;
+	line-height:50px;
+	text-align:center;
+	cursor:pointer;
+}
+
+
+
+.storefront_allRight{
+	width:489px;
+	height:340px;
+	position: absolute;
+	top:0;
+	left:237px;
+	background: #eee;
+
+}
+.storefront_allRight ul{
+	width:460px;
+	height:340px;
+	display:block;
+	margin:0 auto;
+	margin-top:20px;
+}
+.storefront_allRight li{
+	width:140px;
+	height:140px;
+	background:#fff;
+	float:left;
+	margin:0 20px 20px 0;
+	border-radius:140px;
+	position: relative;
+	overflow: hidden;
+}
+/*.storefront_allRight li:hover img{
+	width:142px;
+	height:142px;
+}*/
+.storefront_allRight li:nth-child(3n){
+	margin-right:0;
+}
+.storefront_allRight li img{
+	width:140px;
+	height:140px;
+	border-radius:140px;
+}
+.div_hide,.storefront_allRight li p{
+	width:140px;
+	height:40px;
+	position: absolute;
+	bottom:0;
+	left:0;
+}
+.div_hide{
+	background:#000;
+	opacity:0.5;
+	filter:alpha(opacity=50);
+
+}
+.storefront_allRight li p{
+	z-index:2;
+	color:#fff;
+	text-align:center;
+	line-height:40px;
+}
+.div_show{
+	color:#fff !important;
+	font-size:16px;
+	font-weight:bold;
+	display:none;
+}
+
+
+.storefront_two{
+	top:-340px;
+	left:726px;
+	z-index:5;
+}
+.storefront_three{
+	top:-680px;
+	left:963px;
+	z-index:7;
+}
+
+
+/*美容美妆部分*/
+.beauty{
+	width:1200px;
+	height:570px;
+	margin-top:20px;
+}
+.beauty_content{
+	width:1200px;
+	height:500px;
+	position: relative;
+}
+.beauty_left{
+	width:988px;
+	height:474px;
+}
+.ul_top{
+	width:988px;
+	height:236px;
+	border-bottom:1px #eee solid;
+	border-top:1px #eee solid;
+}
+.beauty_left ul li{
+	width:328px;
+	height:236px;
+	float:left;
+	border-left:1px #eee solid;
+	background:#fff;
+}
+.beauty_left ul li:hover{
+	cursor:pointer;
+}
+.beauty_goods{
+	position: relative;
+}
+.beauty_goods img{
+	width:196px;
+	height:196px;
+	margin:20px 10px 20px 0;
+}
+.beauty_goodsDetals{
+	width:122px;
+	height:216px;
+	background:#fff;
+	position: absolute;
+	top:0;
+	right:0;
+	padding-top:20px;
+}
+.beauty_goodsDetals p{
+	line-height:25px;
+}
+.beauty_store{
+	margin-left:20px;
+}
+.beauty_prize{
+	width:122px;
+	height:130px;
+	margin-top:20px;
+	position: relative;
+}
+.beauty_prize{
+	color:#999;
+}
+.prize_font{
+	font-size:14px;
+	color:#666;
+}
+.prize_span,.beauty_buy span{
+	font-size:20px;
+	color:#c66;
+	
+}
+.prize_span{
+	position: absolute;
+	bottom:10px;
+	left:0;
+}
+.prize_grey{
+	color:#ccc;
+}
+.beauty_buy{
+	width:102px;
+	height:130px;
+	margin-top:20px;
+	position: absolute;
+	bottom:-25px;
+	left:0;
+	z-index:2;
+	background:#fff;
+	padding-left:20px;
+	opacity:0;
+	filter:alpha(opacity=0);
+
+}
+.beauty_buy button{
+	width:82px;
+	height:30px;
+	background:#eee;
+	margin-top:10px;
+}
+
+
+/*美容美妆右边部分*/
+.beauty_right{
+	width:192px;
+	height:474px;
+	background:#ccc;
+	position: absolute;
+	top:0;
+	right:0;
+}
+.beauty_right_content{
+	width:192px;
+	height:100px;
+	background:#FF588C;
+	position: absolute;
+	bottom:0px;
+	right:0;
+	color:#fff;
+	text-align:center;
+}
+.beauty_right_content h3{
+	font-size:16px;
+	margin:20px 0 10px 0;
+}
+.beauty_right_content p a{
+	width:80px;
+	height:20px;
+	display:inline-block;
+	line-height:20px;
+	color:#fff;
+	border-bottom:1px #fff solid;
+	border-top:1px #fff solid;
+}
+
+/*母婴用品右边部分*/
+.baby_right_content{
+	background:#F58481;
+}
+
+
+/*食品饮料右边部分*/
+.food_right_content{
+	background:#8ACE64;
+}
+
+
+
+
+/*国家馆部分*/
+.word{
+	width:1200px;
+	height:220px;
+	margin:20px 0 0 0;
+}
+.word h4,.storefront h4,.beauty h4{
+	width:1200px;
+	height:40px;
+	text-align:center;
+	margin-bottom:20px;
+}
+.word_content{
+	width:1200px;
+	height:102px;
+}
+.word_content li{
+	float:left;
+	width:102px;
+	height:102px;
+	background:#fff;
+	margin-right:20px;
+	text-align:center;
+	position: relative;
+	box-shadow:1px 1px 5px #ccc
+}
+.word_content li:hover{
+	cursor:pointer;
+}
+.word_content li:last-child{
+	margin-right:0;
+}
+.word_content li img{
+	margin-top:21px;
+}
+.word_hidden,.word_hiddenFont{
+	width:102px;
+	height:102px;
+	position: absolute;
+	top:-10px;
+	left:0;
+	opacity:0;
+	filter:alpha(opacity=0);
+}
+.word_hidden{
+	background:#000;
+}
+.word_hiddenFont{
+	z-index:2;
+	color:#fff;
+}
+.word_hiddenFont h3{
+	margin-top:30px;
+	margin-bottom:5px;
+	font-size:16px;
+}
+
+
+

@@ -1,0 +1,563 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>clamour</title>
+<link rel="stylesheet" type="text/css" href="css/clamour.css" />
+<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+<link rel="stylesheet" type="text/css" href="css/common.css"/>
+<link rel="stylesheet" type="text/css" href="css/lanrenzhijia.css"/>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/clamour.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<!--[if lt IE 9]>
+<script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+
+<!--头部header-->
+<header>
+    <!-- 头部的小导航的css样式和js请看common.css和common.js -->
+    
+    <!--头部的小导航header_top-->
+    <div id="header_top">
+        <div class="site_nav">
+            <ul class="nav_left">
+                <li><a href="index.html" target="_blank">森林首页</a></li>
+                <li class="login"><a href="#">请登录</a></li>
+                <li class="user"><div id='userlogin'></div></li>
+                <li class="reg"><a href="register.html">免费注册</a>
+                </li>
+                <li><a id='login_out' style="display:none;">退出</a></li>
+            </ul>
+            <ul class="nav_right">
+                <li id="mys">
+                    <a href="#">
+                        <i class="iconfont icon-yonghu"></i>   我的淘宝
+                    </a>
+                    <div id="mys_list">
+                        <ul>
+                            <li><a href="#"><span class="mys_list_left"></span>我的订单</a></li>
+                            <li><a href="#"><span class="mys_list_left"></span>我的现金券</a></li>
+                            <li><a href="#"><span class="mys_list_left"></span>我的红包</a></li>
+                            <li><a href="#"><span class="mys_list_left"></span>我的余额</a></li>
+                            <li><a href="#"><span class="mys_list_left"></span>我的提现退款</a></li>
+                            <li><a href="#"><span class="mys_list_left"></span>我的收藏</a></li>
+                            <li><a href="#"><span class="mys_list_left"></span>我的心愿单</a></li>
+                            <li><a href="#"><span class="mys_list_left"></span>会员中心</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-gouwuchecar"></i>   购物车<span>0</span>件
+                    </a>
+                </li>
+                <li id="favortite">
+                    <a href="#">
+                        <i class="iconfont icon-shoucangjia"></i>   收藏夹
+                    </a>
+                    <div id="favortite_list">
+                        <ul>
+                            <li><a href="#">收藏的宝贝</a></li>
+                            <li><a href="#">收藏的店铺</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="merchant"><a href="#">商家支持</a>
+                    <div id="merchant_list">
+                        <ul>
+                            <li><a href="#">商家中心</a></li>
+                            <li><a href="#">商家入驻</a></li>
+                            <li><a href="#">运营服务</a></li>
+                            <li><a href="#">商家品控</a></li>
+                            <li><a href="#">商家工具</a></li>
+                            <li><a href="#">商家规则</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div> 
+    </div>
+
+    <!-- 头部的logo部分 -->
+    <div class="header_content">
+        <div class="header_logo">
+            <p>森林魅力惠<span>全球奢品</span><span>官方授权</span></p>
+            
+        </div>
+    </div>
+</header>
+     
+
+<!--中间的main-->
+<div id="main">
+    <nav>
+        <ul>
+            <li><a href="#">所有商品</a></li>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">今日上新</a></li>
+            <li><a href="#">所有品牌</a></li>
+            <li><a href="#">女士</a></li>
+            <li><a href="#">男士</a></li>
+            <li><a href="#">美妆</a></li>
+            <li><a href="#">家居</a></li>
+            <li><a href="#">婴童</a></li>
+            <li><a href="#">我们</a></li>
+            <li><a href="#">帮助中心</a></li>
+        </ul>   
+    </nav>
+
+     <!-- 大图部分 -->
+    <div id="carousel"></div>
+
+    <!-- 正文部分 -->
+    <div class="main_content">
+        <!-- 今日上新new部分 -->
+        <div class="new commom">
+            <h4><img src="images/clamour/new_title.png"></h4>
+            <ul class="common_top">
+                <li>
+                    <img src="images/clamour/new1.png">
+                    <div class="common_topDetials">
+                        <p>初秋新品男士皮衣特惠</p>
+                        <div class="common_topPrice"><em>2.2</em><span>折起</span></div>
+                    </div>
+                    <div class="common_topHide"></div>
+                    <div class="common_topShow">
+                        <p>ANDREW MARC 品牌</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/clamour/new2.png">
+                    <div class="common_topDetials">
+                        <p>初秋新品女士皮衣特惠</p>
+                        <div class="common_topPrice"><em>3.5</em><span>折起</span></div>
+                    </div>
+                    <div class="common_topHide"></div>
+                    <div class="common_topShow">
+                        <p>ANDREW MARC 品牌</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="common_bottom">
+                <div class="commom_content">
+                    <div class="commom_img">
+                        <a href="#"><img src="images/clamour/new3.png"></a>
+                    </div>
+                    <div class="commom_details">
+                         <p class="commom_detailsTitle"><a href="#">TRANOI 意大利精品女士鞋履</a></p>
+                         <p class="commom_detailsCom">TRANOI 品牌来自于世界上最富盛名的奢侈品制造王国---意大利，由出生于意大利鞋匠之家的Mr. Marco 和当时沉浸时尚界多年的设计师Mr. Polo先生共同创立。打造出具有 ?时尚、经典、舒适?的独特品牌。深受时尚、高端品味人士的喜爱，彰显个人魅力，经典中演绎时尚。</p>
+                         <p class="commom_detailsPri"><em>2.4</em>折起</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 热卖品牌hot部分 -->
+        <div class="hot commom">
+            <h4><img src="images/clamour/hot_title.png"></h4>
+            <ul class="common_top">
+                <li>
+                    <img src="images/clamour/hot1.png">
+                    <div class="common_topDetials">
+                        <p>潮流英伦限量女鞋</p>
+                        <div class="common_topPrice"><em>0.8</em><span>折起</span></div>
+                    </div>
+                    <div class="common_topHide"></div>
+                    <div class="common_topShow">
+                        <p>SHELLYS 、 AMIU 品牌</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/clamour/hot2.png">
+                    <div class="common_topDetials">
+                        <p>皇室挚爱女士包袋</p>
+                        <div class="common_topPrice"><em>2.4</em><span>折起</span></div>
+                    </div>
+                    <div class="common_topHide"></div>
+                    <div class="common_topShow">
+                        <p>MODALU 品牌</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="common_bottom">
+                <div class="commom_content">
+                    <div class="commom_img">
+                        <a href="#"><img src="images/clamour/hot3.png"></a>
+                    </div>
+                    <div class="commom_details">
+                         <p class="commom_detailsTitle"><a href="#">TOMS 休闲男鞋及亲子鞋</a></p>
+                         <p class="commom_detailsCom">toms，一个美国的设计师——布雷克·麦考斯（Blake·Mycoskie）在阿根廷创立的牌子，号称你每买一双，他们就为非洲孩子送一双。美国的鞋履品牌汤姆布鞋 (TOMS Shoes)，凭着简单易搭的样式与超级舒服的穿着感受不断蹿红。</p>
+                         <p class="commom_detailsPri"><em>3.0</em>折起</p>
+                    </div>
+                </div>
+            </div>
+            <button class="find_more">查看更多品牌<span> 》 </span></button>
+        </div>
+
+        <!-- 女士品牌women部分 -->
+        <div class="Brandpart">
+            <h4><img src="images/clamour/women_title.png"></h4>
+            <ul class="Brandpart_top">
+                <li>
+                    <img src="images/clamour/women1.png">
+                    <div class="Brandpart_content">
+                        <p>OPENING CEREMONY 潮流女装及鞋履包袋</p>
+                        <p class="Brandpart_pri"><em>3.7</em>折起</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/clamour/women2.png">
+                    <div class="Brandpart_content">
+                        <p>ALEXANDER MCQUEEN、CELINE设计师潮鞋</p>
+                        <p class="Brandpart_pri"><em>1.2</em>折起</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/clamour/women3.png">
+                    <div class="Brandpart_content">
+                        <p>MANOUSH 精品女装（满减）</p>
+                        <p class="Brandpart_pri"><em>1.5</em>折起</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="common_bottom">
+                <div class="commom_content">
+                    <div class="commom_img">
+                        <a href="#"><img src="images/clamour/women4.png"></a>
+                    </div>
+                    <div class="commom_details">
+                         <p class="commom_detailsTitle"><a href="#">老佛爷 女士 走进新宠鞋柜包柜</a></p>
+                         <p class="commom_detailsCom">老佛爷百货全称巴黎老佛爷百货商店，是由法语原名Lafayette音译而来。它诞生于1893年，占据了奥斯曼大道的40号，紧邻巴黎歌剧院。它曾经凭借豪华如宫殿的装修轰动一时。在拜占庭式的巨型镂金雕花圆顶下，来往的人影绰约，像赴一场中世纪的聚会，购物真正成了一种享受。</p>
+                         <p class="commom_detailsPri"><em>1.1</em>折起</p>
+                    </div>
+                </div>
+            </div>
+            <button class="find_more">查看更多品牌<span> 》 </span></button>
+        </div>
+
+        <!-- 男士品牌men部分 -->
+        <div class="Brandpart">
+            <h4><img src="images/clamour/men_title.png"></h4>
+            <ul class="Brandpart_top">
+                <li>
+                    <img src="images/clamour/men1.png">
+                    <div class="Brandpart_content">
+                        <p>OPENING CEREMONY 潮流男装及鞋履</p>
+                        <p class="Brandpart_pri"><em>3.7</em>折起</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/clamour/men2.png">
+                    <div class="Brandpart_content">
+                        <p>老佛爷 男士 尽是新式浪潮</p>
+                        <p class="Brandpart_pri"><em>1.1</em>折起</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/clamour/men3.png">
+                    <div class="Brandpart_content">
+                        <p>老佛爷 男士 实用主义风潮</p>
+                        <p class="Brandpart_pri"><em>1.1</em>折起</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="common_bottom">
+                <div class="commom_content">
+                    <div class="commom_img">
+                        <a href="#"><img src="images/clamour/men4.png"></a>
+                    </div>
+                    <div class="commom_details">
+                         <p class="commom_detailsTitle"><a href="#">老佛爷 女士 走进新宠鞋柜包柜</a></p>
+                         <p class="commom_detailsCom">TRANOI 品牌来自于世界上最富盛名的奢侈品制造王国---意大利，由出生于意大利鞋匠之家的Mr. Marco 和当时沉浸时尚界多年的设计师Mr. Polo先生共同创立。时隔不久Mr. Polo 先生逝世，Mr. Marco为了纪念两人之间的友谊，在1978年正式将该设计师的品牌命名为TRANOI。</p>
+                         <p class="commom_detailsPri"><em>2.3</em>折起</p>
+                    </div>
+                </div>
+            </div>
+            <button class="find_more">查看更多品牌<span> 》 </span></button>
+        </div>
+
+        <!-- 美妆品牌beauty部分 -->
+        <div class="Brandpart">
+            <h4><img src="images/clamour/beauty_title.png"></h4>
+            <ul class="Brandpart_top">
+                <li>
+                    <img src="images/clamour/beauty1.png">
+                    <div class="Brandpart_content">
+                        <p>艳遇花香性感更别样 甜美清新女香场</p>
+                        <p class="Brandpart_pri"><em>1.3</em>折起</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/clamour/beauty2.png">
+                    <div class="Brandpart_content">
+                        <p>品牌造型 专业美发</p>
+                        <p class="Brandpart_pri"><em>3.9</em>折起</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/clamour/beauty3.png">
+                    <div class="Brandpart_content">
+                        <p>高逼格 就要香的有气质 经典男香场</p>
+                        <p class="Brandpart_pri"><em>3.5</em>折起</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="common_bottom">
+                <div class="commom_content">
+                    <div class="commom_img">
+                        <a href="#"><img src="images/clamour/beauty4.png"></a>
+                    </div>
+                    <div class="commom_details">
+                         <p class="commom_detailsTitle"><a href="#">BANANA UMBRELLA 防晒小黑伞（满折）</a></p>
+                         <p class="commom_detailsCom">1.Banana Umbrella品牌是由香港减字控股集团创建于2012年的专业防晒伞品牌。2.Banana Umbrella将可高效阻隔UVA的L.R.C涂层首次在伞布上使用，注重设计感并结合高科技材料和手工缝制，定义了防晒美学。3.2016年3月9日，全国首家Banana Umbrella蕉下品牌形象店于上海正大广场隆重开业。</p>
+                         <p class="commom_detailsPri"><em>1.6</em>折起</p>
+                    </div>
+                </div>
+            </div>
+            <button class="find_more">查看更多品牌<span> 》 </span></button>
+        </div>
+
+        <!-- 家居品牌home部分 -->
+        <div class="Brandpart">
+            <h4><img src="images/clamour/home_title.png"></h4>
+            <ul class="Brandpart_top">
+                <li>
+                    <img src="images/clamour/beauty1.png">
+                    <div class="Brandpart_content">
+                        <p>惬意 办公生活</p>
+                        <p class="Brandpart_pri"><em>4.0</em>折起</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/clamour/home2.png">
+                    <div class="Brandpart_content">
+                        <p>WOLL 德国进口不粘锅</p>
+                        <p class="Brandpart_pri"><em>3.3</em>折起</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/clamour/home3.png">
+                    <div class="Brandpart_content">
+                        <p>中秋团圆 餐桌摆件专场</p>
+                        <p class="Brandpart_pri"><em>4.0</em>折起</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="common_bottom">
+                <div class="commom_content">
+                    <div class="commom_img">
+                        <a href="#"><img src="images/clamour/home4.png"></a>
+                    </div>
+                    <div class="commom_details">
+                         <p class="commom_detailsTitle"><a href="#">THERMOS 膳魔师专场</a></p>
+                         <p class="commom_detailsCom">膳魔师（中国）家庭制品有限公司 Thermos (China) Housewares Co Ltd(简称TCC) ，系享誉国际已百年之全球最大知名高真空系列产品品牌THERMOS（膳魔师）家族的一员。于1995 年由港、日合资，进入中国市场。</p>
+                         <p class="commom_detailsPri"><em>5.7</em>折起</p>
+                    </div>
+                </div>
+            </div>
+            <button class="find_more">查看更多品牌<span> 》 </span></button>
+        </div>
+
+
+        <!-- 婴童品牌kids部分 -->
+        <div class="Brandpart">
+            <h4><img src="images/clamour/kids_title.png"></h4>
+            <ul class="Brandpart_top">
+                <li>
+                    <img src="images/clamour/kids1.png">
+                    <div class="Brandpart_content">
+                        <p>HAO 日本潮牌童装女童专场</p>
+                        <p class="Brandpart_pri"><em>5.0</em>折起</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/clamour/kids2.png">
+                    <div class="Brandpart_content">
+                        <p>JACADI 儿童专场</p>
+                        <p class="Brandpart_pri"><em>3.5</em>折起</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/clamour/kids3.png">
+                    <div class="Brandpart_content">
+                        <p>JACADI 宝宝专场</p>
+                        <p class="Brandpart_pri"><em>3.5</em>折起</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="common_bottom">
+                <div class="commom_content">
+                    <div class="commom_img">
+                        <a href="#"><img src="images/clamour/kids4.png"></a>
+                    </div>
+                    <div class="commom_details">
+                         <p class="commom_detailsTitle"><a href="#">HAPE 德国益智类玩具</a></p>
+                         <p class="commom_detailsCom">Hape国际控股集团总部为位于瑞士卢塞恩(Luzern)，由德国人彼得·汉斯丹(Peter Handstein)先生始创于1986年。Hape™品牌主为全球0-6岁宝贝研发益智木玩，启蒙和促进儿童的健康成长与发展；提倡并秉承生态、环保的生产和生活方式，积极为世界环境保护与可持续发展做出贡献。</p>
+                         <p class="commom_detailsPri"><em>3.5</em>折起</p>
+                    </div>
+                </div>
+            </div>
+            <button class="find_more">查看更多品牌<span> 》 </span></button>
+        </div>
+
+        
+
+        <div class="presell">
+            <img src="images/clamour/presell.png">
+        </div>
+
+    </div>
+    
+
+</div>
+
+
+<!--底部的footer-->
+<footer>
+    <div id="footer_top">
+        <div class="footer_top_copyright">
+            <dl>
+                <dt>购物指南</dt>
+                <dd>免费注册</dd>
+                <dd>开通支付宝</dd>
+                <dd>支付宝充值</dd>
+            </dl>   
+            <dl >
+                <dt>森林保障</dt>
+                <dd>发票保障</dd>
+                <dd>售后规则</dd>
+                <dd>缺货赔付</dd>
+            </dl>
+            <dl >
+                <dt>支付方式</dt>
+                <dd>快捷支付</dd>
+                <dd>信用卡</dd>
+                <dd>余额宝</dd>
+                <dd>蚂蚁花呗</dd>
+                <dd>货到付款</dd>
+            </dl>
+            <dl >
+                <dt>商家服务</dt>
+                <dd>商家入驻</dd>
+                <dd>商家中心</dd>
+                <dd>物流服务</dd>
+                <dd>喵言喵语</dd>
+                <dd>运营服务</dd>
+                
+            </dl>
+            <img src="images/common/bottom.png" />
+        </div>
+    </div>
+    <div class="footer_buttom">
+        <div class="footer_buttom_main">
+            <ul>
+                <li><a href="#">阿里巴巴集团</a></li>
+                <li><a href="#">淘宝网</a></li>
+                <li><a href="#">天猫</a></li>
+                <li><a href="#">聚划算</a></li>
+                <li><a href="#">全球速卖通</a></li>
+                <li><a href="#">阿里巴巴国际交易市场</a></li>
+                <li><a href="#">1688</a></li>
+                <li><a href="#">阿里妈妈</a></li>
+                <li><a href="#">阿里旅行·去啊</a></li>
+                <li><a href="#">阿里云计算</a></li>
+                <li><a href="#">YunOS</a></li>
+                <li><a href="#">阿里通信</a></li>
+                <li><a href="#">万网</a></li>
+                <li><a href="#">高德</a></li>
+                <li><a href="#">优视</a></li>
+                <li><a href="#">友盟</a></li>
+            </ul> 
+            <p>增值电信业务经营许可证： 浙B2-20110446网络文化经营许可证：浙网文[2015]0295-065号互联网医疗保健信息服务 审核同意书 浙卫网审【2014】6号</p>      
+            <p>互联网药品信息服务资质证书编号：浙-（经营性）-2012-0005</p> 
+            <small>© 2003-2016 SENLINSHOP.COM 版权所有</small> 
+        </div>
+    </div> 
+</footer>
+
+
+
+<!-- 右侧边栏的css样式和js请看common.css和common.js -->
+
+<!--右侧边栏-->
+<div class="tools_right">
+    <ul>
+        <li>
+            <a href="#"><i class="iconfont icon-yonghu"></i></a>
+            <div class="tools_fly">我的特权</div>
+        </li>
+        <li>
+            <a href="#"><i class="iconfont icon-gouwuchecar"></i>    购物车</a>
+        </li>
+        <li>
+            <a href="#"><i class="iconfont icon-money1"></i></a>
+            <div class="tools_fly">我的资产</div>
+        </li>
+        <li>
+            <a href="#"><i class="iconfont icon-zan"></i></a>
+            <div class="tools_fly">我喜爱的</div>
+        </li>
+        <li>
+            <a href="#"><i class="iconfont icon-shoucangjia"></i></a>
+            <div class="tools_fly">我的收藏</div>
+        </li>
+        <li>
+            <a href="#"><i class="iconfont icon-shangpin"></i></a>
+            <div class="tools_fly">我的店铺</div>
+        </li>
+        <li>
+            <a href="#"><i class="iconfont icon-call"></i></a>
+            <div class="tools_fly">我的客服</div>
+        </li>
+    </ul>
+
+</div>
+
+<!-- 登录界面的css样式和js请看lanrenzhijia.css和common.js -->
+
+<!-- 登录界面 -->
+<div class="theme-popover">
+     <div class="theme-poptit">
+          <a href="#" title="关闭" class="close">×</a>
+          <h3>森林shop网站登录</h3>
+     </div>
+     <div class="theme-popbod dform">
+           <form class="theme-signin">
+                <ol>
+                     <li><h4>请输入您的用户名和密码！</h4></li>
+                     <li><strong>用户名：</strong><input class="ipt" id="username" type="text" name="username" placeholder="请输入账户" size="20" /></li>
+                     <li><strong>密码：</strong><input class="ipt" id="password" type="password" name="password" placeholder="请输入密码" size="20" /></li>
+                     <li><input class="btn btn-primary" type="button" id="loginBtn" value=" 登 录 " /></li>
+                </ol>
+           </form>
+     </div>
+</div>
+<div class="theme-popover-mask"></div>
+
+<!-- 固定搜索框 -->
+<div id="search_frame">
+    <div class="search_content">
+        <ul>
+            <li><a href="#">所有商品</a></li>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">今日上新</a></li>
+            <li><a href="#">所有品牌</a></li>
+            <li><a href="#">女士</a></li>
+            <li><a href="#">男士</a></li>
+            <li><a href="#">美妆</a></li>
+            <li><a href="#">家居</a></li>
+            <li><a href="#">婴童</a></li>
+            <li><a href="#">我们</a></li>
+            <li><a href="#">帮助中心</a></li>
+        </ul> 
+    </div>
+</div>
+
+</body>
+</html>

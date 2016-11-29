@@ -1,0 +1,842 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>baby</title>
+<link type="text/css" rel="stylesheet" href="css/baby.css" />
+<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+<link rel="stylesheet" type="text/css" href="css/common.css"/>
+<link rel="stylesheet" type="text/css" href="css/lanrenzhijia.css"/>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="js/baby.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</head>
+
+<body>
+
+<!--头部header-->
+<header>
+    <!--头部的小导航header_top-->
+    <div id="header_top">
+        <div class="site_nav">
+            <ul class="nav_left">
+                <li>欢迎来到森林shop！</li>
+                <li class="login"><a href="#">请登录</a></li>
+                <li class="user"><div id='userlogin'></div></li>
+                <li class="reg"><a href="register.html">免费注册</a>
+                </li>
+                <li><a id='login_out' style="display:none;">退出</a></li>
+            </ul>
+            <ul class="nav_right">
+                <li id="mys">
+                    <a href="#">
+                        <i class="iconfont icon-yonghu"></i>   我的淘宝
+                    </a>
+                    <div id="mys_list">
+                        <ul>
+                            <li><a href="#"><span class="mys_list_left"></span>我的订单</a></li>
+                            <li><a href="#"><span class="mys_list_left"></span>我的现金券</a></li>
+                            <li><a href="#"><span class="mys_list_left"></span>我的红包</a></li>
+                            <li><a href="#"><span class="mys_list_left"></span>我的余额</a></li>
+                            <li><a href="#"><span class="mys_list_left"></span>我的提现退款</a></li>
+                            <li><a href="#"><span class="mys_list_left"></span>我的收藏</a></li>
+                            <li><a href="#"><span class="mys_list_left"></span>我的心愿单</a></li>
+                            <li><a href="#"><span class="mys_list_left"></span>会员中心</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-gouwuchecar"></i>   购物车<span>0</span>件
+                    </a>
+                </li>
+                <li id="favortite">
+                    <a href="#">
+                        <i class="iconfont icon-shoucangjia"></i>   收藏夹
+                    </a>
+                    <div id="favortite_list">
+                        <ul>
+                            <li><a href="#">收藏的宝贝</a></li>
+                            <li><a href="#">收藏的店铺</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="merchant"><a href="#">商家支持</a>
+                    <div id="merchant_list">
+                        <ul>
+                            <li><a href="#">商家中心</a></li>
+                            <li><a href="#">商家入驻</a></li>
+                            <li><a href="#">运营服务</a></li>
+                            <li><a href="#">商家品控</a></li>
+                            <li><a href="#">商家工具</a></li>
+                            <li><a href="#">商家规则</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div> 
+    </div>
+    <div class="header_content">
+        <div class="content">
+            <span class="logo">
+                <a href="index.html">森林shop</a>
+            </span>
+            <div class="search">    
+                <input type="text" class="search_text" placeholder="护肤品"/>
+                <input type="button" value="搜索" class="search_button"/>
+                <ul>
+                    <li><a href="#">连衣裙</a></li>
+                    <li><a href="#">榨汁机</a></li>
+                    <li><a href="#">凉鞋</a></li>
+                    <li><a href="#">钱包</a></li>
+                    <li><a href="#">半身裙</a></li>
+                    <li><a href="#">情侣装</a></li>
+                    <li><a href="#">睡衣</a></li>
+                    <li><a href="#">帽子</a></li>
+                    <li><a href="#">风扇</a></li>
+                    <li><a href="#">纸巾</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!--中间的main-->
+<div id="main">
+    <!-- 店铺信息部分 -->
+    <div id="shop">
+        <div class="shop_topRight">
+            <ul>
+                <li>手机店铺</li>
+                <li>
+                    <a href="#"><i class="iconfont icon-shoucangjia"></i> 收藏</a>
+                </li>
+            </ul>
+        </div>
+        <div class="shop_center">
+            <img src="images/baby/shop_logo.png">
+            <div class="shop_name">
+                <p><a href="#">芭欧服饰旗舰店</a></p>
+                <span>品质直销</span>
+            </div>
+            <ul class="shop_evaluation">
+                <li>
+                    <p>描述</p>
+                    <p>4.8</p>
+                </li>
+                <li>
+                    <p>服务</p>
+                    <p>4.8</p>
+                </li>
+                <li>
+                    <p>物流</p>
+                    <p>4.8</p>
+                </li>
+            </ul>
+            <ul class="shop_sell">
+                <li>
+                    <p>8.10</p>
+                    <p>新品</p>
+                </li>
+                <li>
+                    <p>￥<span>10</span></p>
+                    <p>无门槛</p>
+                </li>
+                <li>
+                    <p>￥<span>50</span></p>
+                    <p>满1500</p>
+                </li>
+                <li>
+                    <p>￥<span>100</span></p>
+                    <p>满2800</p>
+                </li>
+            </ul>
+        </div>
+        <div class="shop_bottom">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">所有宝贝</a></li>
+                <li><a href="#">2016秋冬新品</a></li>
+                <li><a href="#">· 8.9七夕相惠</a></li>
+                <li><a href="#">双面呢大衣</a></li>
+                <li><a href="#">薄款皮衣</a></li>
+                <li><a href="#">真皮羽绒</a></li>
+                <li><a href="#">羊毛/皮毛一体</a></li>
+                <li><a href="#">奢华水貂</a></li>
+                <li><a href="#">狐狸毛</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 商品展示部分 -->
+    <div id="goods">
+        <!-- 商品的图片展示 -->
+        <div class="goods_img">
+            <div id="magResult">
+                <img src="images/baby/goods_img1.jpg" class="smallPic"/>
+                <div class="magnifier"></div>
+                <div class="largePic">
+                    <img src="images/baby/goods_img1.jpg" />
+                </div> 
+            </div>
+            <ul>
+                <li><img src="images/baby/goods_img1.jpg" /></li>
+                <li><img src="images/baby/goods_img2.jpg" /></li>
+                <li><img src="images/baby/goods_img3.jpg" /></li>
+                <li><img src="images/baby/goods_img4.jpg" /></li>
+                <li><img src="images/baby/goods_img5.jpg" /></li>
+            </ul>
+            <span><a href="#"><i class="iconfont icon-fenxiang3"></i> 分享</a></span>
+            <span><a href="#"><i class="iconfont icon-shoucangjia"></i> 收藏商品 （55725人气）</a></span>
+            <span class="report"><a href="#">举报</a></span>
+        </div>
+        <!-- 商品的价格信息 -->
+        <div class="goods_news">
+            <h3>芭欧秋季新款 女士纯色中长款毛呢外套纯手工高端双面羊毛大衣</h3>
+            <p>优选优质羊毛 双面设计 360°裁剪 宽松有型 </p>
+            <div class="good_price">
+                <div class="coupon">
+                    <img src="images/baby/coupon.png" />
+                    <span>支持翻倍,满299抵40,可跨店</span>
+                    <a href="#">去抢券</a>
+                </div>
+                <dl>
+                    <dt>专柜价</dt>
+                    <dd> ¥ <span>3670.00</span></dd>
+                </dl>
+                <dl>
+                    <dt>价格</dt>
+                    <dd><em>¥ 1670.00</em></dd>
+                </dl>
+            </div>
+            <dl>
+                <dt>运费</dt>
+                <dd>  浙江嘉兴至 广州 快递: 0.00</dd>
+            </dl>
+            <div class="goods_sell">
+                <ul>
+                    <li>月销量 <span>262</span></li>
+                    <li>累计评价 <span>4336</span></li>
+                    <li>送天猫积分 <span>835</span></li>
+                </ul>
+            </div>
+            <dl id="sizeSort">
+                <dt>尺码</dt>
+                <dd>
+                    <a href="javascript:void(0)">S</a>
+                    <a href="javascript:void(0)">M</a>
+                    <a href="javascript:void(0)">L</a>
+                </dd>
+            </dl>
+            <dl id="colorSort">
+                <dt>颜色分类</dt>
+                <dd>
+                    <a href="javascript:void(0)"><img src="images/baby/goods_color1.jpg" /></a>
+                    <a href="javascript:void(0)"><img src="images/baby/goods_color2.jpg" /></a>
+                    <a href="javascript:void(0)"><img src="images/baby/goods_color3.jpg" /></a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>数量</dt>
+                <dd>
+                    <input type="text" placeholder="1"/> 件
+                    <span>  库存362件</span>
+                </dd>
+            </dl>
+            <dl id="buySort">
+                <dt></dt>
+                <dd>
+                    <button>立即购买</button>
+                    <button><i class="iconfont icon-gouwuchecar"></i> 加入购物车</button>
+                </dd>
+            </dl>
+            <dl>
+                <dt>花呗分期</dt>
+                <dd>登录后确认是否享有该服务 什么是花呗分期</dd>
+            </dl>
+            <ul class="goods_news_ul">
+                <li><a href="#">服务承诺</a></li>
+                <li><a href="#">正品保证</a></li>
+                <li><a href="#">T2极速退款</a></li>
+                <li><a href="#">七天无理由退换</a></li>
+            </ul>
+        </div>
+        <!-- 右边的其他商品展示部分 -->
+        <div class="goods_right">
+            <p>看了又看</p>
+            <div id="goods_right_news">
+                <ul>
+                    <li>
+                        <div class="goods_right_img">
+                            <a href="#"><img src="images/baby/goods_right1.jpg" /></a>
+                            <p>￥638.00</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="goods_right_img">
+                            <a href="#"><img src="images/baby/goods_right2.jpg" /></a>
+                            <p>￥638.00</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="goods_right_img">
+                            <a href="#"><img src="images/baby/goods_right3.jpg" /></a>
+                            <p>￥638.00</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="goods_right_img">
+                            <a href="#"><img src="images/baby/goods_right4.jpg" /></a>
+                            <p>￥638.00</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="goods_right_img">
+                            <a href="#"><img src="images/baby/goods_right5.jpg" /></a>
+                            <p>￥638.00</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="goods_right_img">
+                            <a href="#"><img src="images/baby/goods_right6.jpg" /></a>
+                            <p>￥638.00</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="goods_right_img">
+                            <a href="#"><img src="images/baby/goods_right7.jpg" /></a>
+                            <p>￥638.00</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="goods_right_img">
+                            <a href="#"><img src="images/baby/goods_right8.jpg" /></a>
+                            <p>￥638.00</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="goods_right_img">
+                            <a href="#"><img src="images/baby/goods_right9.jpg" /></a>
+                            <p>￥638.00</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <ul class="goods_right_skip">
+                <li id="skipLast">▲</li>
+                <li id="skipNext">▼</li>
+            </ul>
+        </div>
+    </div>
+    <!-- 商品详情部分 -->
+    <div id="details">
+        <!-- 商品详情侧边栏部分 -->
+        <div class="details_left">
+            <div class="details_left_shop">
+                <h4><a href="#">芭欧服饰旗舰店</a></h4>
+                <div class="blockage">
+                    <p><span>6</span>森林6年店</p>
+                    <ul class="blockage_evo">
+                        <li>
+                            <p>描述</p>
+                            <p>4.8</p>
+                        </li>
+                        <li>
+                            <p>服务</p>
+                            <p>4.8</p>
+                        </li>
+                        <li>
+                            <p>物流</p>
+                            <p>4.8</p>
+                        </li>
+                    </ul>
+                    <ul class="blockage_btn">
+                        <li><a href="">进店逛逛</a></li>
+                        <li><a href="">收藏店铺</a></li>
+                    </ul>
+                </div>
+            </div>
+            <img src="images/baby/detail_left.jpg" />
+            <!-- 本店搜索 -->
+            <div class="details_left_search">
+                <h4>本店搜索</h4>
+                <div>
+                    <label for="keyword"> 关键字 </label>
+                    <input type="text" name="keyword" id="keyword" class="keyword"/>
+                    <label for="price"> 价格 </label>
+                    <input type="text" name="price" id="price1" class="price"/>-
+                    <input type="text" name="price" id="price2" class="price"/>
+                    <button>搜索</button>
+                </div>
+            </div>
+            <!-- 个性化宝贝分类 -->
+            <div class="details_left_sort">
+                <h4>个性化宝贝分类</h4>
+                <div>
+                    <ul>
+                        <li><a href="#">查看所有宝贝</a></li>
+                        <li><a href="#">爆款专区</a></li>
+                        <li><a href="#">2016新品</a></li>
+                        <li><a href="#">羊毛/皮毛一体</a></li>
+                        <li><a href="#">双面呢大衣</a></li>
+                        <li><a href="#">皮衣分类</a></li>
+                        <li><a href="#">皮草分类</a></li>
+                        <li><a href="#">水貂分类</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 商品详情中间部分 -->
+        <div class="details_center">
+            <div class="details_center_title detailSwitch">
+                <ul>
+                    <li class="product_details"><a href="javascript:void(0)">商品详情</a></li>
+                    <li class="cumulative_asse"><a href="javascript:void(0)">累计评价（4336）</a></li>
+                </ul>
+            </div>
+            <div class="details_center_content" id="details_center_content">
+                <div class="description">
+                    <p>
+                        品牌名称：<a href="#">Bool/芭欧</a>
+                        <button><i class="iconfont icon-zan"></i> 关注</button>
+                    </p>
+                    <p>产品参数：</p>
+                    <ul>
+                        <li>材质成分: 羊毛100%</li>
+                        <li>货号: B15Y03037</li>
+                        <li>衣长: 中长款</li>
+                        <li>袖型: 常规</li>
+                        <li>流行元素/工艺: 口袋</li>
+                        <li>衣门襟: 其他</li>
+                    </ul>
+                    <ul>
+                        <li>品牌: Bool/芭欧</li>
+                        <li>领子: 西装领</li>
+                        <li>图案: 纯色</li>
+                        <li>服装版型: 直筒</li>
+                        <li>风格: 通勤</li>
+                        <li>通勤: OL风格</li>
+                    </ul>
+                    <ul>
+                        <li>袖长: 九分袖</li>
+                        <li>销售渠道类型: 纯电商(只在线上销售)</li>
+                        <li>适用年龄: 25-29周岁</li>
+                        <li>上市年份季节: 2015年秋季</li>
+                        <li>颜色分类: 罂粟红 新宝蓝...</li>
+                        <li>尺码: S M L</li>
+                    </ul>
+                </div>
+                <img src="images/baby/detail_center1.jpg"/>
+                <img src="images/baby/detail_center2.jpg"/>
+                <img src="images/baby/detail_center3.jpg"/>
+                <!-- 形象展示 -->
+                <img src="images/baby/detail_center4.jpg"/>
+                <!-- 商品信息 -->
+                <img src="images/baby/detail_center5.jpg" />
+                <!-- 精选面料 -->
+                <img src="images/baby/detail_center6.jpg" />
+                <!-- 精致剪裁 -->
+                <img src="images/baby/detail_center7.jpg" />
+                <!-- 模特展示 -->
+                <img src="images/baby/detail_center8.jpg" />
+                <img src="images/baby/detail_center9.jpg"/>
+                <img src="images/baby/detail_center10.jpg"/>
+                <!-- 累计评价部分  -->
+                <div id="assessment_list">
+
+                    <div class="assessment_list_title">
+                        <h4>累计评价 4336</h4>
+                        <div class="ass_star">
+                            <p>与描述相符</p>
+                            <span>4.8</span>
+                            <p>
+                                <i class="iconfont icon-shoucangjia"></i>
+                                <i class="iconfont icon-shoucangjia"></i>
+                                <i class="iconfont icon-shoucangjia"></i>
+                                <i class="iconfont icon-shoucangjia"></i>
+                                <i class="iconfont icon-shoucangjia"></i>
+                            </p>
+                        </div>
+                        <ul>
+                            <li><a href="#">质量蛮好(58)</a></li>
+                            <li><a href="#">颜色很好(28)</a></li>
+                            <li><a href="#">款式很潮(20)</a></li>
+                            <li><a href="#">穿着美(18)</a></li>
+                            <li><a href="#">态度不错(17)</a></li>
+                            <li><a href="#">实惠(17)</a></li>
+                            <li><a href="#">式样好(14)</a></li>
+                            <li><a href="#">快递不错(13)</a></li>
+                            <li><a href="#">很舒服(13)</a></li>
+                            <li><a href="#">尺码很好(10)</a></li>
+                        </ul>
+                    </div>
+                    <div class="assessment_list_content">
+                        <div class="assessment_sort">
+                            <label><input name="sort" type="radio" value="" />全部 </label> 
+                            <label><input name="sort" type="radio" value="" />追评 </label> 
+                            <label><input name="sort" type="radio" value="" />图片 </label>
+                        </div>
+                        <div class="assessment_sort_content">
+                            <div class="sort_content_left">
+                                <p>就是料子较硬，不是很细腻的羊毛呢，。形很好，穿上不错，颜色也很好</p>
+                                <span>今天</span>
+                                <p class="answer">解释：~O(∩_∩)O~非常感谢亲对芭欧的信赖与支持！您的赞许让我们充满动力，相信亲穿上我们的衣衣一定很漂亮！如果芭欧有什么地方做得不足，也欢迎您指正，芭欧将虚心接受，努力打造满意100%天猫旗舰店 芭欧非常期待跟亲下一次的 “约会”！</p>
+                            </div>
+                            <div  class="sort_content_right">
+                                <ul>
+                                    <li>
+                                        <p>颜色分类：藕粉色</p>
+                                        <p>尺码：S</p>
+                                    </li>
+                                    <li>
+                                        <p>t***4（匿名）</p>
+                                        <span><img src="images/baby/badge4.png" alt="" /></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="assessment_sort_content">
+                            <div class="sort_content_left">
+                                <p>宝贝太喜欢了，很划算，客服boolk11超好！</p>
+
+                                <span>今天</span>
+                                <p class="answer">解释：非常感谢亲对我们家衣衣的认可哦，您的满意是对我们最大的支持哦，衣衣穿着舒服很重要对吧。谢谢亲对我们家服务的肯定哦，期待您的再次光临！</p>
+                            </div>
+                            <div  class="sort_content_right">
+                                <ul>
+                                    <li>
+                                        <p>颜色分类：藕粉色</p>
+                                        <p>尺码：S</p>
+                                    </li>
+                                    <li>
+                                        <p>美***雪（匿名）</p>
+                                        <span><img src="images/baby/badge4.png" alt="" /></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="assessment_sort_content">
+                            <div class="sort_content_left">
+                                <p>物流太快了，24号中午拍的，25号下午就收到货了，浙江到山东，双面羊毛对的起589元，做工很好，面料很好，就是我胖了，买的s有点瘦，励志要为这件衣服减肥了。下次在买件大红色。总体好评！！</p>
+                                <span>今天</span>
+                                <p class="answer">解释：感谢亲的支持和惠顾，期待下次能够能您提供更优质的服务！如果我们的产品和服务好，请推荐给您的朋友；如果还有什么不满意的，请一定告诉我哦。芭欧服饰秉着做生意就是做人，每件衣服必须真材实料，每件产品必须物超所值，每个客人必须认认真真对待！实实在在做好每一步！涓涓细水长流！现在有很多的新款，您可以看看，回馈新老顾客，价格是很优惠实在，不要错过(*^__^*)</p>
+                            </div>
+                            <div  class="sort_content_right">
+                                <ul>
+                                    <li>
+                                        <p>颜色分类：藕粉色</p>
+                                        <p>尺码：S</p>
+                                    </li>
+                                    <li>
+                                        <p>云***a（匿名）</p>
+                                        <span><img src="images/baby/badge4.png" alt="" /></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="assessment_sort_content">
+                            <div class="sort_content_left">
+                                <p>一起邮了两件，风格不同，都留下了。这款宽松，红色很正，很满意的还有袖子长短合适。</p>
+                                <span>今天</span>
+                                <p class="answer">感谢您对我们芭欧的支持，亲对衣衣这么满意，我们也感到非常开心哦~~您的满意是我们工作最大的动力，我们希望着每一位朋友在打开芭欧的美衣时都能满心愉悦，成长是一个过程，我们期待这个过程里，也有您的身影.......芭欧，将一如既往地守候在您身边，给您最最贴心的爱！o(∩_∩)o</p>
+                            </div>
+                            <div  class="sort_content_right">
+                                <ul>
+                                    <li>
+                                        <p>颜色分类：藕粉色</p>
+                                        <p>尺码：S</p>
+                                    </li>
+                                    <li>
+                                        <p>l***5（匿名）</p>
+                                        <span><img src="images/baby/badge4.png" alt="" /></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="assessment_sort_content border_none">
+                            <div class="sort_content_left">
+                                <p>很喜欢这件衣服的颜色，不是太艳的粉，但也不会太暗，适合北方的秋天穿。衣服袖长很舒服，很适合我的胳膊长！穿短袖试穿有点扎。希望后期不起球不变形就好了！</p>
+                                <span>今天</span>
+                                <p class="answer">解释：在您收到宝贝的那一刻，多少的汗水都是值得的。感谢您的支持与惠顾，我们将会更努力。感谢您对芭欧的厚爱。</p>
+                            </div>
+                            <div  class="sort_content_right">
+                                <ul>
+                                    <li>
+                                        <p>颜色分类：藕粉色</p>
+                                        <p>尺码：S</p>
+                                    </li>
+                                    <li>
+                                        <p>飞***3（匿名）</p>
+                                        <span><img src="images/baby/badge4.png" alt="" /></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="paging">
+                            <ul>
+                                <li><a href="#">上一页</a></li>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li>...</li>
+                                <li><a href="#">下一页</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 看了又看部分 -->
+                <div class="look">
+                    <div class="look_title">看了又看</div>
+                    <div class="look_list">
+                        <ul>
+                            <li>
+                                <img src="images/baby/look1.jpg" />
+                                <em>￥638</em>
+                                <div class="look_ass">
+                                    <p>x***6 <span>衣服很好，很柔软，也很合身。</span> </p>
+                                    <p>r***7 <span>东西好</span> </p>
+                                    <p>小***r <span>前前后后买了三件了，质量没话说，正好赶上折扣价，价格特别合适</span> </p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/baby/look2.jpg" />
+                                <em>￥638</em>
+                                <div class="look_ass">
+                                    <p>0***j <span>质量很好做工细致，穿上合身，价格实惠满意！</span> </p>
+                                    <p>t***0 <span>衣服不错，物美价廉，值得拥有！</span> </p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/baby/look3.jpg" />
+                                <em>￥638</em>
+                                <div class="look_ass">
+                                    <p>z***j <span>买了两件，感觉这件双排扣的衣服比单排的大</span> </p>
+                                    <p>愿***z <span>很喜欢</span> </p>
+                                    <p>漠***人 <span>衣服买大了，商家很快给调换了，质量不错！</span> </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="images/baby/look4.jpg" />
+                                <em>￥638</em>
+                                <div class="look_ass">
+                                    <p>z*** <span>蛋质量还不错</span> </p>
+                                    <p>l***2 <span>衣服还可以，摸着挺舒服。就是不知道到底是不是百分之百羊毛。。穿穿看</span> </p>
+                                    <p>冷***3 <span>很好</span> </p>
+                                    <p>h***8 <span>喜欢漂亮</span> </p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/baby/look5.jpg" />
+                                <em>￥638</em>
+                                <div class="look_ass">
+                                    <p>热***家 <span>给老妈买的 挺不错的</span> </p>
+                                    <p>t***3 <span>孩子喜欢</span> </p>
+                                    <p>你***岛 <span>这件换货了，换了别的款。</span> </p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/baby/look6.jpg" />
+                                <em>￥638</em>
+                                <div class="look_ass">
+                                    <p>w***4 <span>宝贝上身效果非常好，高端大气，老公说穿起来特别显瘦，下次还会购买其他款式，质量放心。</span> </p>
+                                    <p>许***3 <span>蛮好的</span> </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="images/baby/look7.jpg" />
+                                <em>￥638</em>
+                                <div class="look_ass">
+                                    <p>你***爷 <span>不解释 不解释</span> </p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/baby/look8.jpg" />
+                                <em>￥638</em>
+                                <div class="look_ass">
+                                    <p>乡***8 <span>质量倒是不错，就是颜色发错了，害我纠结好久要不换</span> </p>
+                                    <p>文***机 <span>衣服美美哒 芭家的衣服件件精品 一分价钱一分货 物有所值</span> </p>
+                                    <p>苗***8 <span>没有穿，以后追评</span> </p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/baby/look9.jpg" />
+                                <em>￥638</em>
+                                <div class="look_ass">
+                                    <p>吴***4 <span>已经买了好多次了衣服还是那么漂亮。</span> </p>
+                                    <p>6***p <span>东东收到，物流给力，东东超值喜欢，太完美了，值得亲们拥有，商家服务周到热情……给N个赞不多，今后会经常关注的</span> </p>
+                                    <p>s***n <span>很便宜，买回来囤着。</span> </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 商品详情右边栏部分 -->
+        <div class="details_right">
+            <div class="details_rightTit">
+                <a href="#"><i class="iconfont icon-gouwuchecar"></i> 加入购物车</a>
+            </div>
+            <ul>
+                <li>产品参数</li>
+                <li>累计评价</li>
+                <li>看了又看</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--底部的footer-->
+<footer>
+    <div id="footer_top">
+        <div class="footer_top_copyright">
+            <dl>
+                <dt>购物指南</dt>
+                <dd>免费注册</dd>
+                <dd>开通支付宝</dd>
+                <dd>支付宝充值</dd>
+            </dl>   
+            <dl >
+                <dt>森林保障</dt>
+                <dd>发票保障</dd>
+                <dd>售后规则</dd>
+                <dd>缺货赔付</dd>
+            </dl>
+            <dl >
+                <dt>支付方式</dt>
+                <dd>快捷支付</dd>
+                <dd>信用卡</dd>
+                <dd>余额宝</dd>
+                <dd>蚂蚁花呗</dd>
+                <dd>货到付款</dd>
+            </dl>
+            <dl >
+                <dt>商家服务</dt>
+                <dd>商家入驻</dd>
+                <dd>商家中心</dd>
+                <dd>物流服务</dd>
+                <dd>喵言喵语</dd>
+                <dd>运营服务</dd>
+                
+            </dl>
+            <img src="images/common/bottom.png" />
+        </div>
+    </div>
+    <div class="footer_buttom">
+        <div class="footer_buttom_main">
+            <ul>
+                <li><a href="#">阿里巴巴集团</a></li>
+                <li><a href="#">淘宝网</a></li>
+                <li><a href="#">天猫</a></li>
+                <li><a href="#">聚划算</a></li>
+                <li><a href="#">全球速卖通</a></li>
+                <li><a href="#">阿里巴巴国际交易市场</a></li>
+                <li><a href="#">1688</a></li>
+                <li><a href="#">阿里妈妈</a></li>
+                <li><a href="#">阿里旅行·去啊</a></li>
+                <li><a href="#">阿里云计算</a></li>
+                <li><a href="#">YunOS</a></li>
+                <li><a href="#">阿里通信</a></li>
+                <li><a href="#">万网</a></li>
+                <li><a href="#">高德</a></li>
+                <li><a href="#">优视</a></li>
+                <li><a href="#">友盟</a></li>
+            </ul> 
+            <p>增值电信业务经营许可证： 浙B2-20110446网络文化经营许可证：浙网文[2015]0295-065号互联网医疗保健信息服务 审核同意书 浙卫网审【2014】6号</p>      
+            <p>互联网药品信息服务资质证书编号：浙-（经营性）-2012-0005</p> 
+            <small>© 2003-2016 SENLINSHOP.COM 版权所有</small> 
+        </div>
+    </div> 
+</footer>
+
+
+<!-- 登录界面 -->
+<div class="theme-popover">
+     <div class="theme-poptit">
+          <a href="#" title="关闭" class="close">×</a>
+          <h3>森林shop网站登录</h3>
+     </div>
+     <div class="theme-popbod dform">
+           <form class="theme-signin" name="loginform" action="" method="post">
+                <ol>
+                     <li><h4>请输入您的用户名和密码！</h4></li>
+                     <li><strong>用户名：</strong><input class="ipt" type="text" name="log" placeholder="请输入账户" size="20" /></li>
+                     <li><strong>密码：</strong><input class="ipt" type="password" name="pwd" placeholder="请输入密码" size="20" /></li>
+                     <li><input class="btn btn-primary" type="submit" name="submit" value=" 登 录 " /></li>
+                </ol>
+           </form>
+     </div>
+</div>
+<div class="theme-popover-mask"></div>
+
+<!-- 右侧边栏的css样式和js请看common.css和common.js -->
+
+<!--右侧边栏-->
+<div class="tools_right">
+    <ul>
+        <li>
+            <a href="#"><i class="iconfont icon-yonghu"></i></a>
+            <div class="tools_fly">我的特权</div>
+        </li>
+        <li>
+            <a href="#"><i class="iconfont icon-gouwuchecar"></i>    购物车</a>
+        </li>
+        <li>
+            <a href="#"><i class="iconfont icon-money1"></i></a>
+            <div class="tools_fly">我的资产</div>
+        </li>
+        <li>
+            <a href="#"><i class="iconfont icon-zan"></i></a>
+            <div class="tools_fly">我喜爱的</div>
+        </li>
+        <li>
+            <a href="#"><i class="iconfont icon-shoucangjia"></i></a>
+            <div class="tools_fly">我的收藏</div>
+        </li>
+        <li>
+            <a href="#"><i class="iconfont icon-shangpin"></i></a>
+            <div class="tools_fly">我的店铺</div>
+        </li>
+        <li>
+            <a href="#"><i class="iconfont icon-call"></i></a>
+            <div class="tools_fly">我的客服</div>
+        </li>
+        <li>
+            <a href="#header_top">TOP</a>
+            <div class="tools_fly">返回顶部</div>
+        </li>
+    </ul>
+</div>
+
+<!-- 固定评价框 -->
+<div id="eva_frame">
+    <div class="eva_content">
+        <!-- <div class="eva_details"> -->
+            <div class="eva_details_left">芭欧服饰旗舰店</div>
+            <div class="eva_details_center detailSwitch">
+                <ul>
+                    <li class="product_details original"><a href="javascript:void(0)">商品详情</a></li>
+                    <li class="cumulative_asse original"><a href="javascript:void(0)" >累计评价（4336）</a></li>
+                </ul>
+            </div>
+            <div class="eva_details_right">
+                <div class="eva_details_rightTil">
+                    <a href="#"><i class="iconfont icon-gouwuchecar"></i> 加入购物车</a>
+                </div>
+                <ul>
+                    <li>产品参数</li>
+                    <li>累计评价</li>
+                    <li>看了又看</li>
+                </ul>
+            </div>
+        <!-- </div> -->
+    </div> 
+</div>
+
+
+</body>
+</html>

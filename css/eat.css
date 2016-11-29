@@ -1,0 +1,400 @@
+@charset "utf-8";
+/* CSS Document */
+/*总的样式*/
+*{margin:0;
+	padding:0;
+	list-style:none;
+	text-decoration:none;}
+
+	
+/*头部header的样式*/
+header{height:110px;}
+	
+/*头部的logo与搜索框部分*/
+.header_content{height:80px;
+	background:#fff;
+}
+.content{width:1200px;
+	height:100px;
+	margin:0 auto;
+	position:relative;}
+.logo{width:150px;
+	height:50px;
+	position:absolute;
+	top:20px;
+	left:50px;
+	color:#000;
+	font-size:24px;
+}
+.search{width:500px;
+	height:30px;
+	position:absolute;
+	top:20px;
+	left:600px;
+	border:3px solid #000;
+}
+.search_text{width:380px;
+	height:30px;
+	float:left;
+	background:#fff;
+	text-indent:5px;
+	border:none;
+}
+.search_button{width:120px;
+	height:30px;
+	background:#000;
+	color:#fff;
+	border:none;
+	float:left;
+	font-size:16px;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+
+
+	
+/*中间的main*/	
+#main{
+	width:100%;
+}
+
+/*中间的轮播部分*/
+.exhibition{
+	width:100%;
+	height:360px;
+	overflow:hidden;
+	/*margin-top:15px;*/
+	/*text-align:center;*/
+	border-top:3px solid #000;
+	position: relative;
+
+}
+#box{
+	width:100%;
+	height:360px;
+	background:#fff;
+	position: relative;
+}
+#box_img{
+	width:1600px;
+	height:360px;
+	margin:0 auto;
+	position: relative;
+}
+#box_img li{
+	width:100%;
+	height:360px;
+	position:absolute;
+	top:0;
+	left:0;
+	opacity:0;
+	filter:alpha(opacity=0);
+}
+#box_img li:first-child{
+	opacity:1;
+	filter:alpha(opacity=1);
+}
+#box_font{
+	width:200px;
+	height:50px;
+	position: absolute;
+	right:40%;
+	bottom:0px;
+
+}
+#box_font li{
+	float:left;
+	width:20px;
+	height:20px;
+	font-size:12px;
+	border-radius:20px;
+	background:#000;
+	text-align:center;
+	line-height:20px;
+	margin-left:10px;
+	opacity:0.3;
+	filter:alpha(opacity=30);
+	cursor:pointer;
+}
+#box_font li:first-child{
+	opacity:0.7;
+	filter:alpha(opacity=70);
+}
+.specity{
+	width:10px;
+	height:600px;
+	background:#fff;
+	opacity:0.5;
+	filter:alpha(opacity=50);
+	position: absolute;
+	top:0px;
+	left:50px;
+	transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
+	-ms-transform:rotate(45deg);
+	transform-origin:top left;
+	-webkit-transform-origin:top left;
+	-moz-transform-origin:top left;
+	-o-transform-origin:top left;
+	-ms-transform-origin:top left;
+}
+.exhibition:hover .specity{
+	opacity:0.9;
+	filter:alpha(opacity=90);
+	transition:all 6s linear;
+	-webkit-transition:all 6s linear;
+	-moz-transition:all 6s linear;
+	-o-transition:all 6s linear;
+	transform:translate(4320px,-100px);
+	-webkit-transform:translate(4320px,-100px);
+	-moz-transform:translate(4320px,-100px);
+	-o-transform:translate(4320px,-100px);
+	-ms-transform:translate(4320px,-100px);
+}
+
+
+/*正文内容*/
+#main_content{
+	width:1200px;
+	margin:0 auto;
+	margin-top:20px;
+}
+
+/*中间的当季水果部分*/
+.eat{
+	width:1200px;
+	margin:20px 0 30px 0;
+
+}
+.eat h4{
+	width:1200px;
+	height:50px;
+	font-size:14px;
+	border-bottom:2px #8abf32 solid;
+	position: relative;
+	background:url(../images/eat/fruitTitle.png) no-repeat 1011px 0px;
+}
+.eat_show{
+	width:100px;
+	height:40px;
+	line-height:40px;
+	display:inline-block;
+	background:#8abf32;
+	text-align:center;
+	margin-top:10px;
+	color:#fff;
+	font-weight:normal;
+	cursor:pointer;
+	border-top-left-radius: 5px;
+	border-top-right-radius:5px;
+}
+.eat_ol{
+	width:180px;
+	background:#fff;
+	border:1px #ccc solid;
+	position:absolute;
+	top:50px;
+	left:0;
+	z-index:999;
+	display:none;
+	padding:20px 0 20px 20px;
+	border:2px #8abf32 solid;
+}
+.eat_ol li{
+	width:60px;
+	height:20px;
+	font-size:12px;
+	float:left;
+	font-weight:bold;
+	line-height:20px;
+}
+.eat_ol li a{
+	color:#666;
+}
+.eat_ol li a:hover{
+	color:#c66;
+}
+.eat_content{
+	width:1200px;
+	height:600px;
+}
+
+
+
+.eat_content ul{width:1200px;
+	margin-top:30px;
+}	
+.eat_content ul li{width:285px;
+	height:285px;
+	float:left;
+	margin:0 20px 20px 0px;
+	position:relative;}
+.eat_content ul li img{
+	width:285px;
+	height:285px;
+}
+.eat_content ul li:nth-child(4n){
+	margin-right:0;
+}
+/*阴影特效部分*/
+.eat_shadow{width:285px;
+	height:100px;
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	color:#fff;
+	text-align:center;
+	/*padding-top:160px;*/
+}
+.eat_shadow h3{color:#fff;
+	font-size:16px;
+	text-align:center;
+	margin-top:60px;
+	font-weight:normal;
+}
+.eat_shadowHide{
+	width:285px;
+	height:130px;
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	opacity:0;
+	filter: alpha(opacity=0);
+}
+.eat_shadowHide p{
+	line-height:25px;
+	color:#eee;
+}
+.eat_shadowHide .eat_price{
+	width:150px;
+	height:40px;
+	display:inline-block;
+	border:1px #c66 solid;
+	border-radius: 20px;
+	line-height:40px;
+	background:#eee;
+	font-size:24px;
+	color:#c66;
+	text-align:center;
+	margin-top:20px;
+}
+.eat_shadowHide .eat_price span{
+	font-size:16px;
+}
+.eat_shadowHide .eat_price i{
+	display:inline-block;
+	/*background:;*/
+	font-size:25px;
+	color:#c66;
+	margin-left:20px;
+}
+/*.eat_content ul li a:hover .eat_shadow{
+	border-bottom:5px solid #8abf32;
+}*/
+
+
+
+/*中间的新鲜水产部分*/
+.marine h4{
+	border-bottom:2px #E13E4D solid;
+	background:url(../images/eat/marineTitle.png) no-repeat 1011px 10px;
+}
+.marine_show{
+	background:#E13E4D;
+}
+.marine_ol{
+	border:2px #E13E4D solid;
+}
+
+/*中间的放心鲜肉部分*/
+.meat{
+	margin-bottom:50px;
+}
+.meat h4{
+	border-bottom:2px #F6823D solid;
+	background:url(../images/eat/meatTitle.png) no-repeat 1011px 10px;
+}
+.meat_show{
+	background:#F6823D;
+}
+.meat_ol{
+	border:2px #F6823D solid;
+}
+
+/*固定搜索框*/
+#search_frame{
+	width:100%;
+	height:50px;
+	position:fixed;
+	top:0;
+	left:0;
+	background:#fff;
+	box-shadow:0 2px 10px #666;
+	display:none;
+}
+.search_content{
+	width:1200px;
+	margin:0 auto;
+	position:relative;
+}
+
+.search_content .logo{width:150px;
+	height:50px;
+	position:absolute;
+	top:10px;
+	left:50px;
+	color:#000;
+	font-size:24px;
+}
+.search_content .search{width:500px;
+	height:30px;
+	position:absolute;
+	top:7px;
+	left:600px;
+	border:3px solid #000;
+}
+.search_content .search_text{width:380px;
+	height:30px;
+	float:left;
+	background:#fff;
+	text-indent:5px;
+	border:none;
+}
+.search_content .search_button{width:120px;
+	height:30px;
+	background:#000;
+	color:#fff;
+	border:none;
+	float:left;
+	font-size:16px;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+
+
+/*渐变*/	
+.gradient{
+
+	filter:alpha(opacity=0 finishopacity=100 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=white,endcolorstr=black,gradientType=0);
+    -ms-filter:alpha(opacity=0 finishopacity=100 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=white ,endcolorstr=black,gradientType=0);/*IE8*/	
+    background:#ccc; /* 一些不支持背景渐变的浏览器   */
+    background:-ms-linear-gradient(top, rgba(250, 250, 250, 0) 0%, rgba(0, 0, 0, 1) 98%); /*IE10*/	
+    /*background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.2) 98%, #FFFFFF 100%); *//*IE10*/
+    background:-moz-linear-gradient(top,rgba(250, 250, 250, 0), #000);/*firefox    -moz-radial-gradient放射状的渐变*/  
+    background:-webkit-gradient(linear, 0 0, 0 bottom, from(rgba(250, 250, 250, 0)), to(#000));  /*chrome/Safari*/
+    background:-o-linear-gradient(top, rgba(250, 250, 250, 0), #000); 
+}
+
+.gradientWhite{
+	/*filter:alpha(opacity=0 finishopacity=100 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=white,endcolorstr=black,gradientType=0);
+    -ms-filter:alpha(opacity=0 finishopacity=100 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=white,endcolorstr=black,gradientType=0);IE8*/	
+    background:#ccc; /* 一些不支持背景渐变的浏览器 */  
+    background:-ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 98%); /*IE10*/	
+    background:-moz-linear-gradient(top,rgba(250, 250, 250, 0), #fff);/*firefox    -moz-radial-gradient放射状的渐变*/  
+    background:-webkit-gradient(linear, 0 0, 0 bottom, from(rgba(250, 250, 250, 0)), to(#fff));  /*chrome/Safari*/
+    background:-o-linear-gradient(top, rgba(250, 250, 250, 0), #fff); 
+}

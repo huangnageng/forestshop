@@ -1,0 +1,995 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>international</title>
+<link rel="stylesheet" type="text/css" href="css/international.css" />
+<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+<link rel="stylesheet" type="text/css" href="css/common.css"/>
+<link rel="stylesheet" type="text/css" href="css/lanrenzhijia.css"/>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/international.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+ <!--[if lt IE 9]>
+    <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+
+<!--头部header-->
+<header>
+    <!-- 头部的小导航的css样式和js请看common.css和common.js -->
+    
+    <!--头部的小导航header_top-->
+    <div id="header_top">
+        <div class="site_nav">
+            <ul class="nav_left">
+                <li><a href="index.html" target="_blank">森林首页</a></li>
+                <li class="login"><a href="#">请登录</a></li>
+                <li class="user"><div id='userlogin'></div></li>
+                <li class="reg"><a href="register.html">免费注册</a>
+                </li>
+                <li><a id='login_out' style="display:none;">退出</a></li>
+            </ul>
+            <ul class="nav_right">
+                <li id="mys">
+                    <a href="#">
+                        <i class="iconfont icon-yonghu"></i>   我的淘宝
+                    </a>
+                    <div id="mys_list">
+                        <ul>
+                            <li><a href="#"><span class="mys_list_left"></span>我的订单</a></li>
+                            <li><a href="#"><span class="mys_list_left"></span>我的现金券</a></li>
+                            <li><a href="#"><span class="mys_list_left"></span>我的红包</a></li>
+                            <li><a href="#"><span class="mys_list_left"></span>我的余额</a></li>
+                            <li><a href="#"><span class="mys_list_left"></span>我的提现退款</a></li>
+                            <li><a href="#"><span class="mys_list_left"></span>我的收藏</a></li>
+                            <li><a href="#"><span class="mys_list_left"></span>我的心愿单</a></li>
+                            <li><a href="#"><span class="mys_list_left"></span>会员中心</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-gouwuchecar"></i>   购物车<span>0</span>件
+                    </a>
+                </li>
+                <li id="favortite">
+                    <a href="#">
+                        <i class="iconfont icon-shoucangjia"></i>   收藏夹
+                    </a>
+                    <div id="favortite_list">
+                        <ul>
+                            <li><a href="#">收藏的宝贝</a></li>
+                            <li><a href="#">收藏的店铺</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="merchant"><a href="#">商家支持</a>
+                    <div id="merchant_list">
+                        <ul>
+                            <li><a href="#">商家中心</a></li>
+                            <li><a href="#">商家入驻</a></li>
+                            <li><a href="#">运营服务</a></li>
+                            <li><a href="#">商家品控</a></li>
+                            <li><a href="#">商家工具</a></li>
+                            <li><a href="#">商家规则</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div> 
+    </div>
+
+    <!-- 头部的logo与搜索框部分 -->
+    <div class="header_content">
+        <div class="content">
+            <span class="logo">森林国际</span>
+            <div class="search">    
+                <input type="text" class="search_text" placeholder="开学点礼 购齐装备搜索"/>
+                <input type="button" value="搜索" class="search_button"/>
+                <ul>
+                    <li><a href="#">玫瑰水</a></li>
+                    <li><a href="#">维骨力</a></li>
+                    <li><a href="#">花王</a></li>
+                    <li><a href="#">鱼油</a></li>
+                    <li><a href="#">贝拉米</a></li>
+                    <li><a href="#">玛卡</a></li>
+                    <li><a href="#">左旋肉碱</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+     
+
+<!--中间的main-->
+<div id="main">
+	<nav>
+        <ul>
+            <li>
+                <span>全部商品分类</span>
+                <div class="all_sort">
+                    <div class="all_sortCont">
+                        <h3><a href="#"><i class="iconfont icon-shoucangjia"></i>   美妆个护</a></h3>
+                        <p>面膜 / 防晒 / 面部护理套装</p>
+                    </div>
+                    <div class="all_sortCont">
+                        <h3><a href="#"><i class="iconfont icon-shoucangjia"></i>   食品保健</a></h3>
+                        <p>代餐奶昔 / 酵素 / 葡萄酒</p>
+                    </div>
+                    <div class="all_sortCont">
+                        <h3><a href="#"><i class="iconfont icon-shoucangjia"></i>   母婴用品</a></h3>
+                        <p>奶粉 / 纸尿裤 / 钙铁锌</p>
+                    </div>
+                    <div class="all_none all_sortCont">
+                        <h3><a href="#"><i class="iconfont icon-shoucangjia"></i>   服饰鞋包</a></h3>
+                        <p>手表 / 运动鞋 / 箱包</p>
+                    </div>
+                </div>
+            </li>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">全球旗舰店</a></li>
+            <li><a href="#">全球精选</a></li>
+            <li><a href="#">国家地区馆</a></li>
+            <li><a href="#">官网直供</a></li>
+            <li><a href="#">关于我们</a></li>
+        </ul>   
+    </nav>
+
+     <!-- 轮播部分 -->
+    <div id="carousel">
+        <div class="carouselBox">
+            <div id="box">
+                <ul id="box_img">
+                    <li><a href="#"><img src="images/international/carousel1.jpg"></a></li>
+                    <li><a href="#"><img src="images/international/carousel2.jpg"></a></li>
+                    <li><a href="#"><img src="images/international/carousel3.jpg"></a></li>
+                </ul>
+                <ul id="box_font">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="carouselRight">
+                <div class="title">
+                    <p>Discovery</p>
+                    <p>识货</p>
+                    <img src="images/international/carouseRight.jpg">
+                </div>
+                <a href="#"><img src="images/international/carouselContent.png"></a>
+                <h4>【波尔多式经典混酿】干红葡萄酒</h4>
+                <p>产自法国波尔多的Comte de Libuzac干红葡萄酒，采用波尔多式经典混酿</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 正文部分 -->
+    <div class="main_content">
+        
+
+        <!-- 全球旗舰店部分 -->
+        <div class="storefront">
+            <h4><img src="images/international/storefront_title.png"></h4>
+            <div class="storefront_content">
+                <div class="storefront_all storefront_one">
+                    <div class="storefront_allLeft">
+                        <a href="#"><img src="images/international/storefront1.jpg"></a>
+                        <div class="storefront_hide"></div>
+                        <div class="storefront_show">法国红酒旗舰店</div>
+                        <div class="storeHome_hide"></div>
+                        <div class="storeHome_show">
+                            进入店铺
+                        </div>
+                    </div>
+                    <div class="storefront_allRight">
+                        <ul>
+                            <li>
+                                <a href="#"><img src="images/international/storefrontOne1.jpg"></a>
+                                <div class="div_hide"></div>
+                                <p>波尔多AOC</p>
+                                <p class="div_show">￥56.0</p>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/international/storefrontOne2.jpg"></a>
+                                <div class="div_hide"></div>
+                                <p>德万利酒庄</p>
+                                <p class="div_show">￥248.0</p>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/international/storefrontOne3.jpg"></a>
+                                <div class="div_hide"></div>
+                                <p>cuvee</p>
+                                <p class="div_show">￥428.0</p>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/international/storefrontOne4.jpg"></a>
+                                <div class="div_hide"></div>
+                                <p>玫瑰桃红</p>
+                                <p class="div_show">￥88.0</p>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/international/storefrontOne5.jpg"></a>
+                                <div class="div_hide"></div>
+                                <p>达威优城堡</p>
+                                <p class="div_show">￥128.0</p>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/international/storefrontOne6.jpg"></a>
+                                <div class="div_hide"></div>
+                                <p>圣保罗750ml</p>
+                                <p class="div_show">￥138.0</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="storefront_all storefront_two">
+                    <div class="storefront_allLeft">
+                        <img src="images/international/storefront2.jpg">
+                        <div class="storefront_hide"></div>
+                        <div class="storefront_show">韩国面膜旗舰店</div>
+                        <div class="storeHome_hide"></div>
+                        <div class="storeHome_show">
+                            进入店铺
+                        </div>
+                    </div>
+                    <div class="storefront_allRight">
+                        <ul>
+                            <li>
+                                <a href="#"><img src="images/international/storefrontTwo1.jpg"></a>
+                                <div class="div_hide"></div>
+                                <p>paparecipe</p>
+                                <p class="div_show">￥69.0</p>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/international/storefrontTwo2.jpg"></a>
+                                <div class="div_hide"></div>
+                                <p>banban Gram</p>
+                                <p class="div_show">￥82.0</p>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/international/storefrontTwo3.jpg"></a>
+                                <div class="div_hide"></div>
+                                <p>韩秀泊芙</p>
+                                <p class="div_show">￥60.0</p>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/international/storefrontTwo4.jpg"></a>
+                                <div class="div_hide"></div>
+                                <p>苏秘SU</p>
+                                <p class="div_show">￥56.0</p>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/international/storefrontTwo5.jpg"></a>
+                                <div class="div_hide"></div>
+                                <p>自然乐园</p>
+                                <p class="div_show">￥19.0</p>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/international/storefrontTwo6.jpg"></a>
+                                <div class="div_hide"></div>
+                                <p>莱妃尔</p>
+                                <p class="div_show">￥53.0</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="storefront_all storefront_three">
+                    <div class="storefront_allLeft">
+                        <img src="images/international/storefront3.jpg">
+                        <div class="storefront_hide"></div>
+                        <div class="storefront_show">日本家居百货旗舰店</div>
+                        <div class="storeHome_hide"></div>
+                        <div class="storeHome_show">
+                            进入店铺
+                        </div>
+                    </div>
+                    <div class="storefront_allRight">
+                        <ul>
+                            <li>
+                                <a href="#"><img src="images/international/storefrontThree1.jpg"></a>
+                                <div class="div_hide"></div>
+                                <p>果子盆两件套</p>
+                                <p class="div_show">￥165.0</p>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/international/storefrontThree2.jpg"></a>
+                                <div class="div_hide"></div>
+                                <p>陶瓷茶杯</p>
+                                <p class="div_show">￥22.0</p>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/international/storefrontThree3.jpg"></a>
+                                <div class="div_hide"></div>
+                                <p>七福神</p>
+                                <p class="div_show">￥280.0</p>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/international/storefrontThree4.jpg"></a>
+                                <div class="div_hide"></div>
+                                <p>食品收纳盒</p>
+                                <p class="div_show">￥30.0</p>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/international/storefrontThree5.jpg"></a>
+                                <div class="div_hide"></div>
+                                <p>沥水收纳盒</p>
+                                <p class="div_show">￥56.0</p>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/international/storefrontThree6.jpg"></a>
+                                <div class="div_hide"></div>
+                                <p>钵饭碗</p>
+                                <p class="div_show">￥25.0</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 美容美妆部分 -->
+        <div class="beauty">
+            <h4><img src="images/international/title2.png"></h4>
+            <div class="beauty_content">
+                <div class="beauty_left">
+                    <ul class="ul_top">
+                        <li>
+                            <div class="beauty_goods">
+                                <img src="images/international/beauty2.jpg">
+                                <div class="beauty_goodsDetals">
+                                    <h3>海外旗舰店:</h3>
+                                    <p class="beauty_store">HealthElement</p>
+                                    <div class="beauty_prize">
+                                        <p class="prize_font">花蜜蜂毒面膜</p>
+                                        <p>去黄紧致 抗氧化</p>
+                                        <p class="prize_grey">该款月成交 864笔</p>
+                                        <span class="prize_span">¥229.00</span>
+                                        <div class="beauty_buy">
+                                            <span>¥229.00</span>
+                                            <button>加入购物车</button>
+                                            <button>进入旗舰店</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="beauty_goods">
+                                <img src="images/international/beauty3.jpg">
+                                <div class="beauty_goodsDetals">
+                                    <h3>海外专营店:</h3>
+                                    <p class="beauty_store">梓薇国际</p>
+                                    <div class="beauty_prize">
+                                        <p class="prize_font">粉漾诱惑润唇膏</p>
+                                        <p>智能变色</p>
+                                        <p class="prize_grey">该款月成交 1.2万笔</p>
+                                        <span class="prize_span">198.00</span>
+                                        <div class="beauty_buy">
+                                            <span>¥198.00</span>
+                                            <button>加入购物车</button>
+                                            <button>进入专营店</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="beauty_goods">
+                                <img src="images/international/beauty4.jpg">
+                                <div class="beauty_goodsDetals">
+                                    <h3>海外专营店:</h3>
+                                    <p class="beauty_store">美林清泉</p>
+                                    <div class="beauty_prize">
+                                        <p class="prize_font">AHC洗面奶</p>
+                                        <p>补水保湿深层清洁</p>
+                                        <p class="prize_grey">该款月成交 626笔</p>
+                                        <span class="prize_span">¥85.00</span>
+                                        <div class="beauty_buy">
+                                            <span>¥85.00</span>
+                                            <button>加入购物车</button>
+                                            <button>进入专营店</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="beauty_goods">
+                                <img src="images/international/beauty5.jpg">
+                                <div class="beauty_goodsDetals">
+                                    <h3>海外旗舰店:</h3>
+                                    <p class="beauty_store">敏婷</p>
+                                    <div class="beauty_prize">
+                                        <p class="prize_font">BURBERRY香水 </p>
+                                        <p>优雅别致</p>
+                                        <p class="prize_grey">该款月成交 2583笔</p>
+                                        <span class="prize_span">¥168.00</span>
+                                        <div class="beauty_buy">
+                                            <span>¥168.00</span>
+                                            <button>加入购物车</button>
+                                            <button>进入旗舰店</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="beauty_goods">
+                                <img src="images/international/beauty6.jpg">
+                                <div class="beauty_goodsDetals">
+                                    <h3>海外旗舰店:</h3>
+                                    <p class="beauty_store">联合利华</p>
+                                    <div class="beauty_prize">
+                                        <p class="prize_font">香港进口护手霜</p>
+                                        <p>滋润保湿</p>
+                                        <p class="prize_grey">该款月成交 241笔</p>
+                                        <span class="prize_span">¥55.00</span>
+                                        <div class="beauty_buy">
+                                            <span>¥55.00</span>
+                                            <button>加入购物车</button>
+                                            <button>进入旗舰店</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="beauty_goods">
+                                <img src="images/international/beauty7.jpg">
+                                <div class="beauty_goodsDetals">
+                                    <h3>海外专营店:</h3>
+                                    <p class="beauty_store">蓓佳海外</p>
+                                    <div class="beauty_prize">
+                                        <p class="prize_font">Kiehl＇s眼霜</p>
+                                        <p>祛浮肿黑眼圈</p>
+                                        <p class="prize_grey">该款月成交 25笔</p>
+                                        <span class="prize_span">¥299.00</span>
+                                        <div class="beauty_buy">
+                                            <span>¥299.00</span>
+                                            <button>加入购物车</button>
+                                            <button>进入专营店</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="beauty_right">
+                    <a href="#"><img src="images/international/beauty1.jpg"></a>
+                    <div class="beauty_right_content">
+                        <h3>看我性感口红</h3>
+                        <p><a href="#">查看更多</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 母婴用品部分 -->
+        <div class="beauty">
+            <h4><img src="images/international/title4.png"></h4>
+            <div class="beauty_content">
+                <div class="beauty_left">
+                    <ul class="ul_top">
+                        <li>
+                            <div class="beauty_goods">
+                                <img src="images/international/baby2.jpg">
+                                <div class="beauty_goodsDetals">
+                                    <h3>海外专营店:</h3>
+                                    <p class="beauty_store">天竣购物</p>
+                                    <div class="beauty_prize">
+                                        <p class="prize_font">Aptamil profutura</p>
+                                        <p>白金版 800g</p>
+                                        <p class="prize_grey">该款月成交 325笔</p>
+                                        <span class="prize_span">¥185.00</span>
+                                        <div class="beauty_buy">
+                                            <span>¥185.00</span>
+                                            <button>加入购物车</button>
+                                            <button>进入专营店</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="beauty_goods">
+                                <img src="images/international/baby3.jpg">
+                                <div class="beauty_goodsDetals">
+                                    <h3>海外旗舰店:</h3>
+                                    <p class="beauty_store">Bebewonderland</p>
+                                    <div class="beauty_prize">
+                                        <p class="prize_font">花王妙而舒纸尿裤</p>
+                                        <p>清新干爽大号</p>
+                                        <p class="prize_grey">该款月成交 126笔</p>
+                                        <span class="prize_span">¥209.00</span>
+                                        <div class="beauty_buy">
+                                            <span>¥209.00</span>
+                                            <button>加入购物车</button>
+                                            <button>进入旗舰店</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="beauty_goods">
+                                <img src="images/international/baby4.jpg">
+                                <div class="beauty_goodsDetals">
+                                    <h3>海外旗舰店:</h3>
+                                    <p class="beauty_store">贝拉米</p>
+                                    <div class="beauty_prize">
+                                        <p class="prize_font">贝拉米婴儿米粉</p>
+                                        <p>4个月以上</p>
+                                        <p class="prize_grey">该款月成交 543笔</p>
+                                        <span class="prize_span">¥49.00</span>
+                                        <div class="beauty_buy">
+                                            <span>¥49.00</span>
+                                            <button>加入购物车</button>
+                                            <button>进入旗舰店</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="beauty_goods">
+                                <img src="images/international/baby5.jpg">
+                                <div class="beauty_goodsDetals">
+                                    <h3>海外专营店:</h3>
+                                    <p class="beauty_store">ibaby</p>
+                                    <div class="beauty_prize">
+                                        <p class="prize_font">Adorable鱼油 </p>
+                                        <p>提高视力智力</p>
+                                        <p class="prize_grey">该款月成交 2笔</p>
+                                        <span class="prize_span">¥119.00</span>
+                                        <div class="beauty_buy">
+                                            <span>¥119.00</span>
+                                            <button>加入购物车</button>
+                                            <button>进入专营店</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="beauty_goods">
+                                <img src="images/international/baby6.jpg">
+                                <div class="beauty_goodsDetals">
+                                    <h3>海外旗舰店:</h3>
+                                    <p class="beauty_store">CHUU</p>
+                                    <div class="beauty_prize">
+                                        <p class="prize_font">亚麻半高领衬衫</p>
+                                        <p>秋季韩版</p>
+                                        <p class="prize_grey">该款月成交 6笔</p>
+                                        <span class="prize_span">¥217.00</span>
+                                        <div class="beauty_buy">
+                                            <span>¥217.00</span>
+                                            <button>加入购物车</button>
+                                            <button>进入旗舰店</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="beauty_goods">
+                                <img src="images/international/beauty7.jpg">
+                                <div class="beauty_goodsDetals">
+                                    <h3>海外旗舰店:</h3>
+                                    <p class="beauty_store">lifespace</p>
+                                    <div class="beauty_prize">
+                                        <p class="prize_font">宝宝益生菌粉60g</p>
+                                        <p>调理肠胃</p>
+                                        <p class="prize_grey">该款月成交 1988笔</p>
+                                        <span class="prize_span">¥159.00</span>
+                                        <div class="beauty_buy">
+                                            <span>¥159.00</span>
+                                            <button>加入购物车</button>
+                                            <button>进入旗舰店</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="beauty_right">
+                    <a href="#"><img src="images/international/baby1.jpg"></a>
+                    <div class="beauty_right_content baby_right_content">
+                        <h3>拜拜“苹果脸”</h3>
+                        <p><a href="#">查看更多</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 食品饮料部分 -->
+        <div class="beauty">
+            <h4><img src="images/international/title5.png"></h4>
+            <div class="beauty_content">
+                <div class="beauty_left">
+                    <ul class="ul_top">
+                        <li>
+                            <div class="beauty_goods">
+                                <img src="images/international/food2.jpg">
+                                <div class="beauty_goodsDetals">
+                                    <h3>海外旗舰店:</h3>
+                                    <p class="beauty_store">Sainsburys</p>
+                                    <div class="beauty_prize">
+                                        <p class="prize_font">米蒂沃红葡萄酒</p>
+                                        <p>9.1开始预</p>
+                                        <p class="prize_grey">该款月成交 1585笔</p>
+                                        <span class="prize_span">¥99.00</span>
+                                        <div class="beauty_buy">
+                                            <span>¥99.00</span>
+                                            <button>加入购物车</button>
+                                            <button>进入旗舰店</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="beauty_goods">
+                                <img src="images/international/food3.jpg">
+                                <div class="beauty_goodsDetals">
+                                    <h3>海外旗舰店:</h3>
+                                    <p class="beauty_store">DEVONDALE</p>
+                                    <div class="beauty_prize">
+                                        <p class="prize_font">德运牛奶</p>
+                                        <p>200ML*24</p>
+                                        <p class="prize_grey">该款月成交 2245万笔</p>
+                                        <span class="prize_span">198.00</span>
+                                        <div class="beauty_buy">
+                                            <span>¥198.00</span>
+                                            <button>加入购物车</button>
+                                            <button>进入旗舰店</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="beauty_goods">
+                                <img src="images/international/food4.jpg">
+                                <div class="beauty_goodsDetals">
+                                    <h3>海外旗舰店:</h3>
+                                    <p class="beauty_store">楼上</p>
+                                    <div class="beauty_prize">
+                                        <p class="prize_font">休闲零食 坚果</p>
+                                        <p>天然无添加</p>
+                                        <p class="prize_grey">该款月成交 84笔</p>
+                                        <span class="prize_span">¥65.00</span>
+                                        <div class="beauty_buy">
+                                            <span>¥65.00</span>
+                                            <button>加入购物车</button>
+                                            <button>进入旗舰店</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="beauty_goods">
+                                <img src="images/international/food5.jpg">
+                                <div class="beauty_goodsDetals">
+                                    <h3>海外旗舰店:</h3>
+                                    <p class="beauty_store">麦德龙</p>
+                                    <div class="beauty_prize">
+                                        <p class="prize_font">多种口味组合硬糖</p>
+                                        <p>结婚喜糖创意糖果</p>
+                                        <p class="prize_grey">该款月成交 208笔</p>
+                                        <span class="prize_span">¥79.90</span>
+                                        <div class="beauty_buy">
+                                            <span>¥79.90</span>
+                                            <button>加入购物车</button>
+                                            <button>进入旗舰店</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="beauty_goods">
+                                <img src="images/international/food6.jpg">
+                                <div class="beauty_goodsDetals">
+                                    <h3>海外旗舰店:</h3>
+                                    <p class="beauty_store">unimatriken</p>
+                                    <div class="beauty_prize">
+                                        <p class="prize_font">水果谷物麦片</p>
+                                        <p>即食冲饮</p>
+                                        <p class="prize_grey">该款月成交 383笔</p>
+                                        <span class="prize_span">¥149.00</span>
+                                        <div class="beauty_buy">
+                                            <span>¥149.00</span>
+                                            <button>加入购物车</button>
+                                            <button>进入旗舰店</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="beauty_goods">
+                                <img src="images/international/food7.jpg">
+                                <div class="beauty_goodsDetals">
+                                    <h3>海外旗舰店:</h3>
+                                    <p class="beauty_store">COSTCO</p>
+                                    <div class="beauty_prize">
+                                        <p class="prize_font">韩国盐烤海苔 </p>
+                                        <p>Costco直营</p>
+                                        <p class="prize_grey">该款月成交 104笔</p>
+                                        <span class="prize_span">¥115.00</span>
+                                        <div class="beauty_buy">
+                                            <span>¥115.00</span>
+                                            <button>加入购物车</button>
+                                            <button>进入旗舰店</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="beauty_right">
+                    <a href="#"><img src="images/international/food1.jpg"></a>
+                    <div class="beauty_right_content food_right_content">
+                        <h3>酒水节预售</h3>
+                        <p><a href="#">查看更多</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 国家馆部分 -->
+        <div class="word">
+            <h4><img src="images/international/title1.jpg"></h4>
+            <div class="word_content">
+                <ul>
+                    <li>
+                        <a href="#"><img src="images/international/word1.png"></a>
+                        <div class="word_hidden"></div>
+                        <div class="word_hiddenFont">
+                            <h3>韩国馆</h3>
+                            <p>South Korea</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/international/word2.png"></a>
+                        <div class="word_hidden"></div>
+                        <div class="word_hiddenFont">
+                            <h3>日本馆</h3>
+                            <p>Japan</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/international/word3.png"></a>
+                        <div class="word_hidden"></div>
+                        <div class="word_hiddenFont">
+                            <h3>美国馆</h3>
+                            <p>United States</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/international/word4.png"></a>
+                        <div class="word_hidden"></div>
+                        <div class="word_hiddenFont">
+                            <h3>台湾地区馆</h3>
+                            <p>Taiwan</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/international/word5.png"></a>
+                        <div class="word_hidden"></div>
+                        <div class="word_hiddenFont">
+                            <h3>法国馆</h3>
+                            <p>France</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/international/word6.png"></a>
+                        <div class="word_hidden"></div>
+                        <div class="word_hiddenFont">
+                            <h3>德国馆</h3>
+                            <p>Germany</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/international/word7.png"></a>
+                        <div class="word_hidden"></div>
+                        <div class="word_hiddenFont">
+                            <h3>英国馆</h3>
+                            <p>United Kingdom</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/international/word8.png"></a>
+                        <div class="word_hidden"></div>
+                        <div class="word_hiddenFont">
+                            <h3>泰国馆</h3>
+                            <p>Thailand</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/international/word9.png"></a>
+                        <div class="word_hidden"></div>
+                        <div class="word_hiddenFont">
+                            <h3>澳大利亚馆</h3>
+                            <p>Australia</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/international/word10.png"></a>
+                        <div class="word_hidden"></div>
+                        <div class="word_hiddenFont">
+                            <h3>新西兰馆</h3>
+                            <p>New Zealand</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        
+
+    </div>
+    
+
+</div>
+
+
+<!--底部的footer-->
+<footer>
+    <div id="footer_top">
+        <div class="footer_top_copyright">
+            <dl>
+                <dt>购物指南</dt>
+                <dd>免费注册</dd>
+                <dd>开通支付宝</dd>
+                <dd>支付宝充值</dd>
+            </dl>   
+            <dl >
+                <dt>森林保障</dt>
+                <dd>发票保障</dd>
+                <dd>售后规则</dd>
+                <dd>缺货赔付</dd>
+            </dl>
+            <dl >
+                <dt>支付方式</dt>
+                <dd>快捷支付</dd>
+                <dd>信用卡</dd>
+                <dd>余额宝</dd>
+                <dd>蚂蚁花呗</dd>
+                <dd>货到付款</dd>
+            </dl>
+            <dl >
+                <dt>商家服务</dt>
+                <dd>商家入驻</dd>
+                <dd>商家中心</dd>
+                <dd>物流服务</dd>
+                <dd>喵言喵语</dd>
+                <dd>运营服务</dd>
+                
+            </dl>
+            <img src="images/common/bottom.png" />
+        </div>
+    </div>
+    <div class="footer_buttom">
+        <div class="footer_buttom_main">
+            <ul>
+                <li><a href="#">阿里巴巴集团</a></li>
+                <li><a href="#">淘宝网</a></li>
+                <li><a href="#">天猫</a></li>
+                <li><a href="#">聚划算</a></li>
+                <li><a href="#">全球速卖通</a></li>
+                <li><a href="#">阿里巴巴国际交易市场</a></li>
+                <li><a href="#">1688</a></li>
+                <li><a href="#">阿里妈妈</a></li>
+                <li><a href="#">阿里旅行·去啊</a></li>
+                <li><a href="#">阿里云计算</a></li>
+                <li><a href="#">YunOS</a></li>
+                <li><a href="#">阿里通信</a></li>
+                <li><a href="#">万网</a></li>
+                <li><a href="#">高德</a></li>
+                <li><a href="#">优视</a></li>
+                <li><a href="#">友盟</a></li>
+            </ul> 
+            <p>增值电信业务经营许可证： 浙B2-20110446网络文化经营许可证：浙网文[2015]0295-065号互联网医疗保健信息服务 审核同意书 浙卫网审【2014】6号</p>      
+            <p>互联网药品信息服务资质证书编号：浙-（经营性）-2012-0005</p> 
+            <small>© 2003-2016 SENLINSHOP.COM 版权所有</small> 
+        </div>
+    </div> 
+</footer>
+
+
+
+<!-- 右侧边栏的css样式和js请看common.css和common.js -->
+
+<!--右侧边栏-->
+<!-- <div class="bar_tools">
+	<ul>
+    	<li>
+            <a href="#"><i class="iconfont icon-yonghu"></i></a>
+            <div class="tools_fly">我的特权</div>
+        </li>
+        <li>
+            <a href="#"><i class="iconfont icon-gouwuchecar"></i>    购物车</a>
+        </li>
+        <li>
+            <a href="#"><i class="iconfont icon-money1"></i></a>
+            <div class="tools_fly">我的资产</div>
+        </li>
+        <li>
+            <a href="#"><i class="iconfont icon-zan"></i></a>
+            <div class="tools_fly">我喜爱的</div>
+        </li>
+        <li>
+            <a href="#"><i class="iconfont icon-shoucangjia"></i></a>
+            <div class="tools_fly">我的收藏</div>
+        </li>
+        <li>
+            <a href="#"><i class="iconfont icon-shangpin"></i></a>
+            <div class="tools_fly">我的店铺</div>
+        </li>
+        <li>
+            <a href="#"><i class="iconfont icon-call"></i></a>
+            <div class="tools_fly">我的客服</div>
+        </li>
+    </ul>
+
+</div> -->
+
+<!-- 登录界面的css样式和js请看lanrenzhijia.css和common.js -->
+
+<!-- 登录界面 -->
+<div class="theme-popover">
+     <div class="theme-poptit">
+          <a href="#" title="关闭" class="close">×</a>
+          <h3>森林shop网站登录</h3>
+     </div>
+     <div class="theme-popbod dform">
+           <form class="theme-signin">
+                <ol>
+                     <li><h4>请输入您的用户名和密码！</h4></li>
+                     <li><strong>用户名：</strong><input class="ipt" id="username" type="text" name="username" placeholder="请输入账户" size="20" /></li>
+                     <li><strong>密码：</strong><input class="ipt" id="password" type="password" name="password" placeholder="请输入密码" size="20" /></li>
+                     <li><input class="btn btn-primary" type="button" id="loginBtn" value=" 登 录 " /></li>
+                </ol>
+           </form>
+     </div>
+</div>
+<div class="theme-popover-mask"></div>
+
+
+</body>
+</html>
